@@ -4,36 +4,68 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Hedgy – Privacy Policy</title>
+<link rel="alternate" hreflang="en" href="?lang=en">
+<link rel="alternate" hreflang="lv" href="?lang=lv">
+<link rel="alternate" hreflang="cs" href="?lang=cs">
+<link rel="alternate" hreflang="de" href="?lang=de">
+<link rel="alternate" hreflang="es" href="?lang=es">
+<link rel="alternate" hreflang="et" href="?lang=et">
+<link rel="alternate" hreflang="fi" href="?lang=fi">
+<link rel="alternate" hreflang="fr" href="?lang=fr">
+<link rel="alternate" hreflang="it" href="?lang=it">
+<link rel="alternate" hreflang="lt" href="?lang=lt">
+<link rel="alternate" hreflang="nl" href="?lang=nl">
+<link rel="alternate" hreflang="pl" href="?lang=pl">
+<link rel="alternate" hreflang="pt" href="?lang=pt">
+<link rel="alternate" hreflang="ru" href="?lang=ru">
+<link rel="alternate" hreflang="sv" href="?lang=sv">
+<link rel="alternate" hreflang="uk" href="?lang=uk">
+<script>document.documentElement.className='js'</script>
 <style>
-:root{--bg:#f4f6f3;--fg:#1d2a24;--accent:#215f45;--line:#cfd8d2;--card:#fff}
-@media (prefers-color-scheme:dark){:root{--bg:#121815;--fg:#dde6e0;--accent:#7cc8a2;--line:#2c3a33;--card:#1a221e}}
+:root{--bg:#f4f6f3;--fg:#1d2a24;--accent:#215f45;--line:#cfd8d2;--card:#fff;--muted:#5b6b62}
+@media (prefers-color-scheme:dark){:root{--bg:#121815;--fg:#dde6e0;--accent:#7cc8a2;--line:#2c3a33;--card:#1a221e;--muted:#9aaba1}}
 body{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;max-width:720px;margin:0 auto;padding:24px 16px;line-height:1.6;color:var(--fg);background:var(--bg)}
-h1{color:var(--accent);line-height:1.25}h2{margin-top:28px;font-size:1.2em}a{color:var(--accent)}
-hr{margin:40px 0;border:0;border-top:1px solid var(--line)}
+h1{color:var(--accent);line-height:1.25}h2{margin-top:28px;font-size:1.2em}a{color:var(--accent)}code{overflow-wrap:anywhere}
 .box{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 16px}
+.note{color:var(--muted);font-size:.92em}
+nav{display:flex;justify-content:flex-end}
+select{font:inherit;color:var(--fg);background:var(--card);border:1px solid var(--line);border-radius:8px;padding:6px 10px}
+.pp+.pp{border-top:1px solid var(--line);margin-top:40px}
+.js .pp{display:none}.js .pp.on{display:block;border:0;margin:0}
 </style>
 </head>
 <body>
-<nav><a href="#en">English</a> · <a href="#lv">Latviešu</a></nav>
+<nav><label>🌐 <select id="lang" aria-label="Language">
+<option value="en">English</option>
+<option value="lv">Latviešu</option>
+<option value="cs">Čeština</option>
+<option value="de">Deutsch</option>
+<option value="es">Español</option>
+<option value="et">Eesti</option>
+<option value="fi">Suomi</option>
+<option value="fr">Français</option>
+<option value="it">Italiano</option>
+<option value="lt">Lietuvių</option>
+<option value="nl">Nederlands</option>
+<option value="pl">Polski</option>
+<option value="pt">Português</option>
+<option value="ru">Русский</option>
+<option value="sv">Svenska</option>
+<option value="uk">Українська</option>
+</select></label></nav>
 
-<section id="en" lang="en">
+<section id="en" lang="en" class="pp" data-title="Hedgy – Privacy Policy">
 <h1>Hedgy – Privacy Policy</h1>
 <p><i>Effective date: 24 October 2026</i></p>
-
 <p>This policy applies to the Hedgy Android app (package <code>com.andrislazda.hedgy</code>), developed by Andris Lazda, Latvia ("we", "the developer").</p>
-
 <div class="box"><b>In short:</b> Hedgy has no accounts, no servers of its own, no analytics, no advertising and no tracking. Your financial data stays on your device. If you turn on Google Drive backup, copies go straight to <b>your own</b> Google Drive; the developer never receives them and cannot access them.</div>
-
 <h2>Data we collect</h2>
 <p>None. We do not receive your transactions, bank statements, device identifiers, location, contacts or usage statistics.</p>
-
 <h2>Data stored on your device</h2>
 <p>Transactions, categories, budgets, goals, rules and settings that you enter or import are stored only in the app's storage on your device. Bank statement files are read and processed on the device and are never uploaded anywhere.</p>
-
 <h2>Backups and exports</h2>
 <p>The app automatically keeps a backup copy of its data in the app's internal storage on your device. If you choose a folder, one copy per day is also saved there (the last 10 are kept). A CSV export or a backup file to share is only created when you ask for one. The file is handed to the destination you choose, such as Files, Google Drive or email, and that service's own privacy policy applies.</p>
 <p>If Android system backup is enabled on your phone, Android includes this automatic copy in your personal Google backup so your data can be restored on a new phone. This is managed by Google and we have no access to it. Your PIN is not included.</p>
-
 <h2>Google Drive backup (optional)</h2>
 <p>Hedgy can save a daily backup to your Google Drive. This is off by default and only starts after you tap "Back up to Google Drive" and sign in with your Google account.</p>
 <ul>
@@ -44,52 +76,38 @@ hr{margin:40px 0;border:0;border-top:1px solid var(--line)}
 <li><b>Stopping:</b> "Disconnect Google Drive" stops new copies. Copies already saved remain in your Drive until you delete them there. You can also remove Hedgy's access at any time at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
 </ul>
 <p>Hedgy's use and transfer of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements. This data is used only to provide backup and restore, is never shared with anyone and is never used for advertising.</p>
-
 <h2>Permissions</h2>
 <p><b>Internet:</b> used only for the optional Google Drive backup and for Google Play purchases. Hedgy does not use it to send your data anywhere else.<br>
 <b>Notifications:</b> only requested if you turn on reminders. Reminders are scheduled by the phone itself and are not sent from a server.<br>
 <b>Run at startup:</b> only used to reschedule reminders after the phone restarts.<br>
 <b>Fingerprint / face unlock:</b> handled by Android; the app only receives the result (success or failure).</p>
-
 <h2>Purchases</h2>
-<p>If you buy a subscription in the app, Google Play processes the payment under <a href="https://policies.google.com/privacy">Google's privacy policy</a>. We only receive confirmation that the subscription is active and never see your payment details.</p>
-
+<p>If you buy a subscription in the app, Google Play processes the payment under <a href="https://policies.google.com/privacy?hl=en">Google's privacy policy</a>. We only receive confirmation that the subscription is active and never see your payment details.</p>
 <h2>Deleting your data</h2>
 <p>You can delete all data in the app (More → Data &amp; storage → Delete data) or by uninstalling the app. Google Drive copies are deleted in your Google Drive (the "Hedgy" folder). Because we do not store your data, there is nothing for us to delete on our side.</p>
-
 <h2>Your rights</h2>
 <p>Under the EU General Data Protection Regulation (GDPR) you have the right to access, correct and delete your personal data. Because all of your data stays under your control, on your device and in your own Google account, you can exercise these rights directly in the app and in your Google account. If you have a concern, contact us below. You may also lodge a complaint with your data protection authority (in Latvia: <a href="https://www.dvi.gov.lv">Datu valsts inspekcija</a>).</p>
-
 <h2>Children</h2>
 <p>Hedgy is not directed at children under 13, and we do not knowingly collect children's data.</p>
-
 <h2>Changes</h2>
 <p>If this policy changes, the updated version will be published on this page with a new effective date.</p>
-
 <h2>Contact</h2>
 <p>Questions about this policy: <a href="mailto:lazda.andris1991@gmail.com">lazda.andris1991@gmail.com</a></p>
 </section>
 
-<hr>
-
-<section id="lv" lang="lv">
+<section id="lv" lang="lv" class="pp" data-title="Hedgy – Privātuma politika">
 <h1>Hedgy – Privātuma politika</h1>
 <p><i>Spēkā no: 2026. gada 24. oktobra</i></p>
-
+<p class="note">Šis ir tulkojums. Ja starp versijām ir atšķirības, noteicošā ir <a href="?lang=en">angļu versija</a>.</p>
 <p>Šī politika attiecas uz Android lietotni Hedgy (pakotne <code>com.andrislazda.hedgy</code>). Lietotni izstrādā Andris Lazda, Latvija ("mēs", "izstrādātājs").</p>
-
 <div class="box"><b>Īsumā:</b> Hedgy nav kontu, nav savu serveru, analītikas, reklāmu vai izsekošanas. Tavi finanšu dati paliek tavā ierīcē. Ja ieslēdz Google Drive kopiju, kopijas nonāk tieši <b>tavā paša</b> Google Drive; izstrādātājs tās nesaņem un tām nevar piekļūt.</div>
-
 <h2>Kādus datus mēs vācam</h2>
 <p>Nekādus. Mēs nesaņemam ne tavus darījumus, ne bankas izrakstus, ne ierīces identifikatorus, ne atrašanās vietu, ne kontaktus vai lietošanas statistiku.</p>
-
 <h2>Dati, kas glabājas tavā ierīcē</h2>
 <p>Darījumi, kategorijas, budžeti, mērķi, noteikumi un iestatījumi, ko ievadi vai importē, tiek saglabāti tikai lietotnes krātuvē tavā ierīcē. Bankas izraksta failus lietotne nolasa un apstrādā turpat ierīcē, un tie netiek nekur augšupielādēti.</p>
-
 <h2>Rezerves kopijas un eksports</h2>
 <p>Lietotne automātiski saglabā savu datu rezerves kopiju lietotnes iekšējā krātuvē tavā ierīcē. Ja pats izvēlies mapi, tajā tiek saglabāta arī viena kopija dienā (pēdējās 10). CSV eksportu un rezerves kopijas failu kopīgošanai lietotne izveido tikai tad, kad tu to pats prasi. Fails tiek nodots tavā izvēlētajā vietā, piemēram, Failos, Google Drive vai e-pastā, un uz to attiecas šī pakalpojuma konfidencialitātes politika.</p>
 <p>Ja tavā tālrunī ir ieslēgta Android sistēmas dublēšana, Android iekļauj šo automātisko kopiju tavā personīgajā Google kopijā, lai datus varētu atjaunot jaunā tālrunī. To pārvalda Google, un mēs šiem datiem nepiekļūstam. PIN kods netiek iekļauts.</p>
-
 <h2>Google Drive rezerves kopija (pēc izvēles)</h2>
 <p>Hedgy var katru dienu saglabāt rezerves kopiju tavā Google Drive. Pēc noklusējuma tas ir izslēgts un sākas tikai tad, kad nospied "Dublēt Google Drive" un pieslēdzies ar savu Google kontu.</p>
 <ul>
@@ -100,30 +118,633 @@ hr{margin:40px 0;border:0;border-top:1px solid var(--line)}
 <li><b>Atslēgšana:</b> "Atvienot Google Drive" pārtrauc jaunu kopiju veidošanu. Jau saglabātās kopijas paliek tavā Drive, līdz tu tās tur izdzēs. Hedgy piekļuvi vari jebkurā laikā atsaukt arī <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
 </ul>
 <p>Hedgy no Google API saņemtās informācijas izmantošana un nodošana atbilst <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, tostarp Limited Use prasībām. Šie dati tiek izmantoti tikai rezerves kopēšanai un atjaunošanai, netiek nevienam nodoti un netiek izmantoti reklāmai.</p>
-
 <h2>Atļaujas</h2>
 <p><b>Internets:</b> tiek izmantots tikai Google Drive kopijai (ja to ieslēdz) un Google Play pirkumiem. Hedgy to neizmanto, lai sūtītu tavus datus kur citur.<br>
 <b>Paziņojumi:</b> tiek prasīti tikai tad, ja ieslēdz atgādinājumus. Atgādinājumus plāno pats tālrunis, un tie netiek sūtīti no servera.<br>
 <b>Startēšana pēc ieslēgšanas:</b> tiek izmantota tikai, lai pēc restarta no jauna ieplānotu atgādinājumus.<br>
 <b>Pirksta nospiedums / sejas atpazīšana:</b> to veic Android, un lietotne saņem tikai rezultātu (izdevās vai neizdevās).</p>
-
 <h2>Pirkumi</h2>
-<p>Ja lietotnē iegādājies abonementu, maksājumu apstrādā Google Play saskaņā ar <a href="https://policies.google.com/privacy">Google konfidencialitātes politiku</a>. Mēs saņemam tikai apstiprinājumu, ka abonements ir aktīvs, un neredzam tavus maksājuma datus.</p>
-
+<p>Ja lietotnē iegādājies abonementu, maksājumu apstrādā Google Play saskaņā ar <a href="https://policies.google.com/privacy?hl=lv">Google konfidencialitātes politiku</a>. Mēs saņemam tikai apstiprinājumu, ka abonements ir aktīvs, un neredzam tavus maksājuma datus.</p>
 <h2>Datu dzēšana</h2>
 <p>Visus datus vari izdzēst pašā lietotnē (Vairāk → Dati un krātuve → Dzēst datus) vai atinstalējot lietotni. Google Drive kopijas dzēs savā Google Drive (mape "Hedgy"). Tā kā mēs tavus datus neglabājam, mums nav ko dzēst no savas puses.</p>
-
 <h2>Tavas tiesības</h2>
-<p>Saskaņā ar ES Vispārīgo datu aizsardzības regulu (VDAR) tev ir tiesības piekļūt saviem personas datiem, tos labot un dzēst. Tā kā visi tavi dati ir tavā pārziņā (ierīcē un tavā Google kontā), šīs tiesības vari īstenot tieši lietotnē un savā Google kontā. Ja tev ir jautājumi, sazinies ar mums; tev ir arī tiesības iesniegt sūdzību <a href="https://www.dvi.gov.lv">Datu valsts inspekcijā</a>.</p>
-
+<p>Saskaņā ar ES Vispārīgo datu aizsardzības regulu (VDAR) tev ir tiesības piekļūt saviem personas datiem, tos labot un dzēst. Tā kā visi tavi dati ir tavā pārziņā (ierīcē un tavā Google kontā), šīs tiesības vari īstenot tieši lietotnē un savā Google kontā. Ja tev ir jautājumi, sazinies ar mums; tev ir arī tiesības iesniegt sūdzību datu aizsardzības iestādē (Latvijā: <a href="https://www.dvi.gov.lv">Datu valsts inspekcija</a>).</p>
 <h2>Bērni</h2>
 <p>Hedgy nav paredzēta bērniem līdz 13 gadu vecumam, un mēs apzināti nevācam bērnu datus.</p>
-
 <h2>Izmaiņas</h2>
 <p>Ja šī politika mainīsies, atjaunotā versija tiks publicēta šajā lapā ar jaunu spēkā stāšanās datumu.</p>
-
 <h2>Saziņa</h2>
 <p>Jautājumi par šo politiku: <a href="mailto:lazda.andris1991@gmail.com">lazda.andris1991@gmail.com</a></p>
 </section>
+
+<section id="cs" lang="cs" class="pp" data-title="Hedgy – Zásady ochrany osobních údajů">
+<h1>Hedgy – Zásady ochrany osobních údajů</h1>
+<p><i>Platnost od: 24. října 2026</i></p>
+<p class="note">Toto je překlad. V případě rozporů je rozhodující <a href="?lang=en">anglická verze</a>.</p>
+<p>Tyto zásady se vztahují na aplikaci Hedgy pro Android (balíček <code>com.andrislazda.hedgy</code>), kterou vyvíjí Andris Lazda, Lotyšsko („my“, „vývojář“).</p>
+<div class="box"><b>Ve zkratce:</b> Hedgy nemá žádné účty, vlastní servery, analytiku, reklamy ani sledování. Vaše finanční data zůstávají ve vašem zařízení. Pokud zapnete zálohování na Google Drive, kopie se ukládají přímo do <b>vašeho vlastního</b> Google Drive; vývojář je nikdy nedostane a nemá k nim přístup.</div>
+<h2>Jaké údaje shromažďujeme</h2>
+<p>Žádné. Nedostáváme vaše transakce, bankovní výpisy, identifikátory zařízení, polohu, kontakty ani statistiky používání.</p>
+<h2>Data uložená ve vašem zařízení</h2>
+<p>Transakce, kategorie, rozpočty, cíle, pravidla a nastavení, které zadáte nebo importujete, se ukládají pouze v úložišti aplikace ve vašem zařízení. Soubory bankovních výpisů se čtou a zpracovávají přímo v zařízení a nikam se nenahrávají.</p>
+<h2>Zálohy a exporty</h2>
+<p>Aplikace automaticky uchovává záložní kopii svých dat ve vnitřním úložišti aplikace ve vašem zařízení. Pokud vyberete složku, ukládá se do ní také jedna kopie denně (uchovává se posledních 10). Export CSV nebo soubor zálohy ke sdílení se vytvoří jen tehdy, když o to požádáte. Soubor se předá do cíle, který zvolíte, například Soubory, Google Drive nebo e-mail, a platí pro něj zásady ochrany osobních údajů dané služby.</p>
+<p>Pokud máte v telefonu zapnuté systémové zálohování Androidu, Android zahrne tuto automatickou kopii do vaší osobní zálohy Google, aby bylo možné data obnovit v novém telefonu. Spravuje ji Google a my k ní nemáme přístup. Váš PIN v ní není.</p>
+<h2>Zálohování na Google Drive (volitelné)</h2>
+<p>Hedgy může každý den uložit zálohu na váš Google Drive. Ve výchozím nastavení je tato funkce vypnutá a spustí se až poté, co klepnete na „Zálohovat na Google Drive“ a přihlásíte se svým účtem Google.</p>
+<ul>
+<li><b>Co se odesílá:</b> soubor zálohy (JSON) s výše popsanými daty aplikace (transakce, kategorie, rozpočty, cíle, pravidla a nastavení). Váš PIN v něm není. Soubor se odesílá přímo z vašeho telefonu do Googlu přes šifrované spojení (HTTPS) a neprochází žádným naším serverem.</li>
+<li><b>Kde je uložen:</b> ve složce „Hedgy“ na vašem vlastním Google Drive. Ukládá se jedna kopie denně a uchovává se posledních 10; starší kopie Hedgy se automaticky mažou.</li>
+<li><b>Přístup:</b> Hedgy žádá pouze o oprávnění <code>drive.file</code>, které jí umožňuje vidět a spravovat jen soubory, jež sama vytvořila. Žádné jiné soubory na vašem Drive číst nemůže.</li>
+<li><b>Obnovení:</b> „Obnovit z Google Drive“ stáhne do telefonu nejnovější kopii Hedgy.</li>
+<li><b>Vypnutí:</b> „Odpojit Google Drive“ zastaví vytváření nových kopií. Již uložené kopie zůstanou na vašem Drive, dokud je tam nesmažete. Přístup aplikace Hedgy můžete také kdykoli odebrat na <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
+</ul>
+<p>Používání a předávání informací, které Hedgy získá z rozhraní Google API, se řídí dokumentem <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, včetně požadavků na omezené použití (Limited Use). Tato data se používají pouze k zálohování a obnovení, nikdy se s nikým nesdílejí a nikdy se nepoužívají k reklamě.</p>
+<h2>Oprávnění</h2>
+<p><b>Internet:</b> používá se pouze pro volitelné zálohování na Google Drive a pro nákupy přes Google Play. Hedgy jej nepoužívá k odesílání vašich dat jinam.<br>
+<b>Oznámení:</b> aplikace o ně žádá, jen pokud zapnete připomínky. Připomínky plánuje samotný telefon a neposílají se ze serveru.<br>
+<b>Spuštění po zapnutí:</b> používá se pouze k naplánování připomínek po restartu telefonu.<br>
+<b>Otisk prstu / rozpoznání obličeje:</b> zajišťuje Android; aplikace dostane pouze výsledek (úspěch nebo neúspěch).</p>
+<h2>Nákupy</h2>
+<p>Pokud si v aplikaci koupíte předplatné, platbu zpracuje Google Play podle <a href="https://policies.google.com/privacy?hl=cs">zásad ochrany soukromí společnosti Google</a>. Dostáváme pouze potvrzení, že je předplatné aktivní, a vaše platební údaje nikdy nevidíme.</p>
+<h2>Smazání vašich dat</h2>
+<p>Všechna data můžete smazat v aplikaci (Více → Data a úložiště → Smazat data) nebo odinstalováním aplikace. Kopie na Google Drive smažete na svém Google Drive (složka „Hedgy“). Protože vaše data neukládáme, na naší straně není co mazat.</p>
+<h2>Vaše práva</h2>
+<p>Podle obecného nařízení EU o ochraně osobních údajů (GDPR) máte právo na přístup ke svým osobním údajům, jejich opravu a výmaz. Protože všechna vaše data zůstávají pod vaší kontrolou, ve vašem zařízení a ve vašem vlastním účtu Google, můžete tato práva uplatnit přímo v aplikaci a ve svém účtu Google. S dotazy se na nás obraťte níže. Můžete také podat stížnost u svého dozorového úřadu pro ochranu osobních údajů (v Lotyšsku: <a href="https://www.dvi.gov.lv">Datu valsts inspekcija</a>).</p>
+<h2>Děti</h2>
+<p>Hedgy není určena dětem mladším 13 let a vědomě neshromažďujeme údaje o dětech.</p>
+<h2>Změny</h2>
+<p>Pokud se tyto zásady změní, aktualizovaná verze bude zveřejněna na této stránce s novým datem platnosti.</p>
+<h2>Kontakt</h2>
+<p>Dotazy k těmto zásadám: <a href="mailto:lazda.andris1991@gmail.com">lazda.andris1991@gmail.com</a></p>
+</section>
+
+<section id="de" lang="de" class="pp" data-title="Hedgy – Datenschutzerklärung">
+<h1>Hedgy – Datenschutzerklärung</h1>
+<p><i>Gültig ab: 24. Oktober 2026</i></p>
+<p class="note">Dies ist eine Übersetzung. Bei Abweichungen ist die <a href="?lang=en">englische Fassung</a> maßgeblich.</p>
+<p>Diese Erklärung gilt für die Android-App Hedgy (Paket <code>com.andrislazda.hedgy</code>), entwickelt von Andris Lazda, Lettland („wir“, „der Entwickler“).</p>
+<div class="box"><b>Kurz gesagt:</b> Hedgy hat keine Konten, keine eigenen Server, keine Analyse, keine Werbung und kein Tracking. Deine Finanzdaten bleiben auf deinem Gerät. Wenn du die Google-Drive-Sicherung einschaltest, gehen die Kopien direkt in <b>dein eigenes</b> Google Drive; der Entwickler erhält sie nie und hat keinen Zugriff darauf.</div>
+<h2>Welche Daten wir erheben</h2>
+<p>Keine. Wir erhalten weder deine Buchungen noch Kontoauszüge, Gerätekennungen, Standortdaten, Kontakte oder Nutzungsstatistiken.</p>
+<h2>Auf deinem Gerät gespeicherte Daten</h2>
+<p>Buchungen, Kategorien, Budgets, Ziele, Regeln und Einstellungen, die du eingibst oder importierst, werden nur im Speicher der App auf deinem Gerät abgelegt. Kontoauszugsdateien werden auf dem Gerät gelesen und verarbeitet und nirgendwo hochgeladen.</p>
+<h2>Sicherungen und Exporte</h2>
+<p>Die App speichert automatisch eine Sicherungskopie ihrer Daten im internen Speicher der App auf deinem Gerät. Wenn du einen Ordner auswählst, wird dort zusätzlich eine Kopie pro Tag gespeichert (die letzten 10 bleiben erhalten). Ein CSV-Export oder eine Sicherungsdatei zum Teilen wird nur erstellt, wenn du das möchtest. Die Datei wird an das von dir gewählte Ziel übergeben, z. B. Dateien, Google Drive oder E-Mail, und es gilt die Datenschutzerklärung dieses Dienstes.</p>
+<p>Wenn auf deinem Telefon die Android-Systemsicherung eingeschaltet ist, nimmt Android diese automatische Kopie in deine persönliche Google-Sicherung auf, damit deine Daten auf einem neuen Telefon wiederhergestellt werden können. Das wird von Google verwaltet, und wir haben keinen Zugriff darauf. Deine PIN ist nicht enthalten.</p>
+<h2>Google-Drive-Sicherung (optional)</h2>
+<p>Hedgy kann täglich eine Sicherung in deinem Google Drive speichern. Diese Funktion ist standardmäßig ausgeschaltet und startet erst, wenn du auf „In Google Drive sichern“ tippst und dich mit deinem Google-Konto anmeldest.</p>
+<ul>
+<li><b>Was gesendet wird:</b> eine Sicherungsdatei (JSON) mit den oben beschriebenen App-Daten (Buchungen, Kategorien, Budgets, Ziele, Regeln und Einstellungen). Deine PIN ist nicht enthalten. Die Datei wird direkt von deinem Telefon über eine verschlüsselte Verbindung (HTTPS) an Google gesendet und läuft über keinen unserer Server.</li>
+<li><b>Wo sie gespeichert wird:</b> in einem Ordner „Hedgy“ in deinem eigenen Google Drive. Pro Tag wird eine Kopie gespeichert, die letzten 10 bleiben erhalten; ältere Hedgy-Kopien werden automatisch gelöscht.</li>
+<li><b>Zugriff:</b> Hedgy fordert nur die Berechtigung <code>drive.file</code> an. Damit kann die App nur die Dateien sehen und verwalten, die sie selbst erstellt hat. Andere Dateien in deinem Drive kann sie nicht lesen.</li>
+<li><b>Wiederherstellen:</b> „Aus Google Drive wiederherstellen“ lädt die neueste Hedgy-Kopie auf dein Telefon herunter.</li>
+<li><b>Beenden:</b> „Google Drive trennen“ beendet das Anlegen neuer Kopien. Bereits gespeicherte Kopien bleiben in deinem Drive, bis du sie dort löschst. Den Zugriff von Hedgy kannst du außerdem jederzeit unter <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a> entfernen.</li>
+</ul>
+<p>Die Nutzung und Weitergabe von Informationen, die Hedgy von Google-APIs erhält, erfolgt gemäß der <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, einschließlich der Anforderungen zur eingeschränkten Nutzung (Limited Use). Diese Daten werden nur für Sicherung und Wiederherstellung verwendet, nie an Dritte weitergegeben und nie für Werbung genutzt.</p>
+<h2>Berechtigungen</h2>
+<p><b>Internet:</b> wird nur für die optionale Google-Drive-Sicherung und für Käufe über Google Play verwendet. Hedgy nutzt es nicht, um deine Daten anderswohin zu senden.<br>
+<b>Benachrichtigungen:</b> werden nur angefragt, wenn du Erinnerungen einschaltest. Erinnerungen plant das Telefon selbst; sie werden nicht von einem Server gesendet.<br>
+<b>Beim Gerätestart ausführen:</b> wird nur verwendet, um Erinnerungen nach einem Neustart des Telefons neu zu planen.<br>
+<b>Fingerabdruck / Gesichtserkennung:</b> wird von Android durchgeführt; die App erhält nur das Ergebnis (erfolgreich oder nicht).</p>
+<h2>Käufe</h2>
+<p>Wenn du in der App ein Abo kaufst, wickelt Google Play die Zahlung gemäß der <a href="https://policies.google.com/privacy?hl=de">Datenschutzerklärung von Google</a> ab. Wir erhalten nur die Bestätigung, dass das Abo aktiv ist, und sehen deine Zahlungsdaten nie.</p>
+<h2>Deine Daten löschen</h2>
+<p>Du kannst alle Daten in der App löschen (Mehr → Daten &amp; Speicher → Daten löschen) oder die App deinstallieren. Google-Drive-Kopien löschst du in deinem Google Drive (Ordner „Hedgy“). Da wir deine Daten nicht speichern, gibt es auf unserer Seite nichts zu löschen.</p>
+<h2>Deine Rechte</h2>
+<p>Nach der EU-Datenschutz-Grundverordnung (DSGVO) hast du das Recht auf Auskunft, Berichtigung und Löschung deiner personenbezogenen Daten. Da alle deine Daten unter deiner Kontrolle bleiben – auf deinem Gerät und in deinem eigenen Google-Konto –, kannst du diese Rechte direkt in der App und in deinem Google-Konto ausüben. Bei Fragen wende dich an uns (siehe unten). Du kannst dich außerdem bei deiner Datenschutz-Aufsichtsbehörde beschweren (in Lettland: <a href="https://www.dvi.gov.lv">Datu valsts inspekcija</a>).</p>
+<h2>Kinder</h2>
+<p>Hedgy richtet sich nicht an Kinder unter 13 Jahren, und wir erheben wissentlich keine Daten von Kindern.</p>
+<h2>Änderungen</h2>
+<p>Wenn sich diese Erklärung ändert, wird die aktualisierte Fassung auf dieser Seite mit neuem Gültigkeitsdatum veröffentlicht.</p>
+<h2>Kontakt</h2>
+<p>Fragen zu dieser Erklärung: <a href="mailto:lazda.andris1991@gmail.com">lazda.andris1991@gmail.com</a></p>
+</section>
+
+<section id="es" lang="es" class="pp" data-title="Hedgy – Política de privacidad">
+<h1>Hedgy – Política de privacidad</h1>
+<p><i>Fecha de entrada en vigor: 24 de octubre de 2026</i></p>
+<p class="note">Esta es una traducción. En caso de discrepancia, prevalece la <a href="?lang=en">versión en inglés</a>.</p>
+<p>Esta política se aplica a la aplicación Android Hedgy (paquete <code>com.andrislazda.hedgy</code>), desarrollada por Andris Lazda, Letonia («nosotros», «el desarrollador»).</p>
+<div class="box"><b>En resumen:</b> Hedgy no tiene cuentas, ni servidores propios, ni analítica, ni publicidad, ni seguimiento. Tus datos financieros se quedan en tu dispositivo. Si activas la copia de seguridad en Google Drive, las copias van directamente a <b>tu propio</b> Google Drive; el desarrollador nunca las recibe y no puede acceder a ellas.</div>
+<h2>Datos que recopilamos</h2>
+<p>Ninguno. No recibimos tus transacciones, extractos bancarios, identificadores del dispositivo, ubicación, contactos ni estadísticas de uso.</p>
+<h2>Datos almacenados en tu dispositivo</h2>
+<p>Las transacciones, categorías, presupuestos, objetivos, reglas y ajustes que introduces o importas se guardan solo en el almacenamiento de la aplicación en tu dispositivo. Los archivos de extractos bancarios se leen y procesan en el dispositivo y nunca se suben a ningún sitio.</p>
+<h2>Copias de seguridad y exportaciones</h2>
+<p>La aplicación guarda automáticamente una copia de seguridad de sus datos en el almacenamiento interno de la aplicación en tu dispositivo. Si eliges una carpeta, también se guarda allí una copia al día (se conservan las 10 últimas). Una exportación CSV o un archivo de copia de seguridad para compartir solo se crea cuando tú lo pides. El archivo se entrega al destino que elijas, como Archivos, Google Drive o correo electrónico, y se aplica la política de privacidad de ese servicio.</p>
+<p>Si la copia de seguridad del sistema Android está activada en tu teléfono, Android incluye esta copia automática en tu copia de seguridad personal de Google para que puedas restaurar tus datos en un teléfono nuevo. La gestiona Google y nosotros no tenemos acceso a ella. Tu PIN no se incluye.</p>
+<h2>Copia de seguridad en Google Drive (opcional)</h2>
+<p>Hedgy puede guardar una copia de seguridad diaria en tu Google Drive. Está desactivada por defecto y solo empieza después de que toques «Copia de seguridad en Google Drive» e inicies sesión con tu cuenta de Google.</p>
+<ul>
+<li><b>Qué se envía:</b> un archivo de copia de seguridad (JSON) con los datos de la aplicación descritos arriba (transacciones, categorías, presupuestos, objetivos, reglas y ajustes). Tu PIN no se incluye. El archivo se envía directamente desde tu teléfono a Google mediante una conexión cifrada (HTTPS) y no pasa por ningún servidor nuestro.</li>
+<li><b>Dónde se guarda:</b> en una carpeta «Hedgy» de tu propio Google Drive. Se guarda una copia al día y se conservan las 10 últimas; las copias de Hedgy más antiguas se eliminan automáticamente.</li>
+<li><b>Acceso:</b> Hedgy solo solicita el permiso <code>drive.file</code>, que le permite ver y gestionar únicamente los archivos que ella misma ha creado. No puede leer ningún otro archivo de tu Drive.</li>
+<li><b>Restaurar:</b> «Restaurar desde Google Drive» descarga en tu teléfono la copia de Hedgy más reciente.</li>
+<li><b>Desactivar:</b> «Desconectar Google Drive» detiene las copias nuevas. Las copias ya guardadas permanecen en tu Drive hasta que las elimines allí. También puedes retirar el acceso de Hedgy en cualquier momento en <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
+</ul>
+<p>El uso y la transferencia por parte de Hedgy de la información recibida de las API de Google cumplen la <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, incluidos los requisitos de uso limitado (Limited Use). Estos datos se usan solo para la copia de seguridad y la restauración, nunca se comparten con nadie y nunca se usan para publicidad.</p>
+<h2>Permisos</h2>
+<p><b>Internet:</b> se usa solo para la copia de seguridad opcional en Google Drive y para las compras en Google Play. Hedgy no lo usa para enviar tus datos a ningún otro lugar.<br>
+<b>Notificaciones:</b> solo se solicitan si activas los recordatorios. Los recordatorios los programa el propio teléfono y no se envían desde un servidor.<br>
+<b>Ejecutar al iniciar:</b> se usa solo para volver a programar los recordatorios después de reiniciar el teléfono.<br>
+<b>Huella dactilar / reconocimiento facial:</b> lo gestiona Android; la aplicación solo recibe el resultado (correcto o fallido).</p>
+<h2>Compras</h2>
+<p>Si compras una suscripción en la aplicación, Google Play procesa el pago conforme a la <a href="https://policies.google.com/privacy?hl=es">política de privacidad de Google</a>. Solo recibimos la confirmación de que la suscripción está activa y nunca vemos tus datos de pago.</p>
+<h2>Eliminar tus datos</h2>
+<p>Puedes eliminar todos los datos en la aplicación (Más → Datos y almacenamiento → Eliminar datos) o desinstalando la aplicación. Las copias de Google Drive se eliminan en tu Google Drive (carpeta «Hedgy»). Como no almacenamos tus datos, no hay nada que eliminar por nuestra parte.</p>
+<h2>Tus derechos</h2>
+<p>Conforme al Reglamento General de Protección de Datos de la UE (RGPD), tienes derecho a acceder a tus datos personales, rectificarlos y suprimirlos. Como todos tus datos permanecen bajo tu control, en tu dispositivo y en tu propia cuenta de Google, puedes ejercer estos derechos directamente en la aplicación y en tu cuenta de Google. Si tienes alguna duda, contáctanos más abajo. También puedes presentar una reclamación ante tu autoridad de protección de datos (en Letonia: <a href="https://www.dvi.gov.lv">Datu valsts inspekcija</a>).</p>
+<h2>Menores</h2>
+<p>Hedgy no está dirigida a menores de 13 años y no recopilamos conscientemente datos de menores.</p>
+<h2>Cambios</h2>
+<p>Si esta política cambia, la versión actualizada se publicará en esta página con una nueva fecha de entrada en vigor.</p>
+<h2>Contacto</h2>
+<p>Preguntas sobre esta política: <a href="mailto:lazda.andris1991@gmail.com">lazda.andris1991@gmail.com</a></p>
+</section>
+
+<section id="et" lang="et" class="pp" data-title="Hedgy – Privaatsuspoliitika">
+<h1>Hedgy – Privaatsuspoliitika</h1>
+<p><i>Kehtib alates: 24. oktoober 2026</i></p>
+<p class="note">See on tõlge. Lahknevuste korral kehtib <a href="?lang=en">ingliskeelne versioon</a>.</p>
+<p>See poliitika kehtib Androidi rakenduse Hedgy kohta (pakett <code>com.andrislazda.hedgy</code>), mille arendaja on Andris Lazda, Läti („meie“, „arendaja“).</p>
+<div class="box"><b>Lühidalt:</b> Hedgyl pole kontosid, oma servereid, analüütikat, reklaame ega jälgimist. Sinu finantsandmed jäävad sinu seadmesse. Kui lülitad sisse Google Drive'i varunduse, lähevad koopiad otse <b>sinu enda</b> Google Drive'i; arendaja ei saa neid kunagi kätte ega pääse neile ligi.</div>
+<h2>Milliseid andmeid me kogume</h2>
+<p>Mitte mingeid. Me ei saa sinu tehinguid, pangaväljavõtteid, seadme identifikaatoreid, asukohta, kontakte ega kasutusstatistikat.</p>
+<h2>Sinu seadmes talletatavad andmed</h2>
+<p>Tehingud, kategooriad, eelarved, eesmärgid, reeglid ja seaded, mille sisestad või impordid, salvestatakse ainult rakenduse salvestusruumi sinu seadmes. Pangaväljavõtete faile loetakse ja töödeldakse seadmes ning neid ei laadita kuhugi üles.</p>
+<h2>Varukoopiad ja eksport</h2>
+<p>Rakendus hoiab oma andmetest automaatselt varukoopiat rakenduse sisemälus sinu seadmes. Kui valid kausta, salvestatakse sinna lisaks üks koopia päevas (alles jäetakse 10 viimast). CSV-eksport või jagamiseks mõeldud varukoopia fail luuakse ainult siis, kui sa seda palud. Fail antakse üle sinu valitud sihtkohta, näiteks Failid, Google Drive või e-post, ja sellele kehtib selle teenuse enda privaatsuspoliitika.</p>
+<p>Kui sinu telefonis on Androidi süsteemne varundus sisse lülitatud, lisab Android selle automaatse koopia sinu isiklikku Google'i varukoopiasse, et andmeid saaks uues telefonis taastada. Seda haldab Google ja meil pole sellele ligipääsu. Sinu PIN-koodi sinna ei lisata.</p>
+<h2>Google Drive'i varundus (valikuline)</h2>
+<p>Hedgy saab iga päev salvestada varukoopia sinu Google Drive'i. See on vaikimisi välja lülitatud ja käivitub alles siis, kui puudutad „Varunda Google Drive'i“ ja logid sisse oma Google'i kontoga.</p>
+<ul>
+<li><b>Mida saadetakse:</b> varukoopia fail (JSON), mis sisaldab ülal kirjeldatud rakenduse andmeid (tehingud, kategooriad, eelarved, eesmärgid, reeglid ja seaded). Sinu PIN-koodi sinna ei lisata. Fail saadetakse otse sinu telefonist Google'ile krüpteeritud ühenduse (HTTPS) kaudu ega läbi ühtegi meie serverit.</li>
+<li><b>Kus seda hoitakse:</b> kaustas „Hedgy“ sinu enda Google Drive'is. Päevas salvestatakse üks koopia ja alles jäetakse 10 viimast; vanemad Hedgy koopiad kustutatakse automaatselt.</li>
+<li><b>Ligipääs:</b> Hedgy taotleb ainult <code>drive.file</code> õigust, mis lubab tal näha ja hallata ainult neid faile, mille ta ise on loonud. Muid sinu Drive'i faile ta lugeda ei saa.</li>
+<li><b>Taastamine:</b> „Taasta Google Drive'ist“ laadib sinu telefoni uusima Hedgy koopia.</li>
+<li><b>Lõpetamine:</b> „Katkesta Google Drive'i ühendus“ peatab uute koopiate tegemise. Juba salvestatud koopiad jäävad sinu Drive'i, kuni sa need sealt kustutad. Hedgy ligipääsu saad igal ajal eemaldada ka lehel <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
+</ul>
+<p>Hedgy poolt Google'i API-dest saadud teabe kasutamine ja edastamine vastab dokumendile <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, sealhulgas piiratud kasutuse (Limited Use) nõuetele. Neid andmeid kasutatakse ainult varundamiseks ja taastamiseks, neid ei jagata kunagi kellegagi ega kasutata kunagi reklaamiks.</p>
+<h2>Load</h2>
+<p><b>Internet:</b> kasutatakse ainult valikuliseks Google Drive'i varunduseks ja Google Play ostudeks. Hedgy ei kasuta seda sinu andmete saatmiseks mujale.<br>
+<b>Märguanded:</b> küsitakse ainult siis, kui lülitad meeldetuletused sisse. Meeldetuletused ajastab telefon ise ja neid ei saadeta serverist.<br>
+<b>Käivitamine seadme sisselülitamisel:</b> kasutatakse ainult meeldetuletuste uuesti ajastamiseks pärast telefoni taaskäivitamist.<br>
+<b>Sõrmejälg / näotuvastus:</b> seda teeb Android; rakendus saab ainult tulemuse (õnnestus või ebaõnnestus).</p>
+<h2>Ostud</h2>
+<p>Kui ostad rakenduses tellimuse, töötleb makset Google Play vastavalt <a href="https://policies.google.com/privacy?hl=et">Google'i privaatsuspoliitikale</a>. Me saame ainult kinnituse, et tellimus on aktiivne, ega näe kunagi sinu makseandmeid.</p>
+<h2>Andmete kustutamine</h2>
+<p>Kõik andmed saad kustutada rakenduses (Veel → Andmed ja salvestus → Kustuta andmeid) või rakenduse desinstallimisega. Google Drive'i koopiad kustutad oma Google Drive'is (kaust „Hedgy“). Kuna me sinu andmeid ei hoia, pole meil enda poolt midagi kustutada.</p>
+<h2>Sinu õigused</h2>
+<p>ELi isikuandmete kaitse üldmääruse (GDPR) alusel on sul õigus oma isikuandmetega tutvuda, neid parandada ja kustutada. Kuna kõik sinu andmed on sinu kontrolli all, sinu seadmes ja sinu enda Google'i kontol, saad neid õigusi kasutada otse rakenduses ja oma Google'i kontol. Küsimuste korral võta meiega ühendust allpool. Sul on ka õigus esitada kaebus andmekaitseasutusele (Lätis: <a href="https://www.dvi.gov.lv">Datu valsts inspekcija</a>).</p>
+<h2>Lapsed</h2>
+<p>Hedgy pole mõeldud alla 13-aastastele lastele ja me ei kogu teadlikult laste andmeid.</p>
+<h2>Muudatused</h2>
+<p>Kui see poliitika muutub, avaldatakse uuendatud versioon sellel lehel koos uue jõustumiskuupäevaga.</p>
+<h2>Kontakt</h2>
+<p>Küsimused selle poliitika kohta: <a href="mailto:lazda.andris1991@gmail.com">lazda.andris1991@gmail.com</a></p>
+</section>
+
+<section id="fi" lang="fi" class="pp" data-title="Hedgy – Tietosuojakäytäntö">
+<h1>Hedgy – Tietosuojakäytäntö</h1>
+<p><i>Voimassa alkaen: 24. lokakuuta 2026</i></p>
+<p class="note">Tämä on käännös. Mahdollisissa ristiriitatilanteissa <a href="?lang=en">englanninkielinen versio</a> on ratkaiseva.</p>
+<p>Tämä käytäntö koskee Android-sovellusta Hedgy (paketti <code>com.andrislazda.hedgy</code>), jonka kehittää Andris Lazda, Latvia (”me”, ”kehittäjä”).</p>
+<div class="box"><b>Lyhyesti:</b> Hedgyssä ei ole tilejä, omia palvelimia, analytiikkaa, mainoksia eikä seurantaa. Taloustietosi pysyvät laitteellasi. Jos otat Google Drive -varmuuskopioinnin käyttöön, kopiot menevät suoraan <b>omaan</b> Google Driveesi; kehittäjä ei koskaan saa niitä eikä pääse niihin käsiksi.</div>
+<h2>Mitä tietoja keräämme</h2>
+<p>Emme mitään. Emme saa tapahtumiasi, tiliotteitasi, laitetunnisteita, sijaintia, yhteystietoja emmekä käyttötilastoja.</p>
+<h2>Laitteellesi tallennetut tiedot</h2>
+<p>Tapahtumat, luokat, budjetit, tavoitteet, säännöt ja asetukset, jotka syötät tai tuot, tallennetaan vain sovelluksen tallennustilaan laitteellasi. Tiliotetiedostot luetaan ja käsitellään laitteella, eikä niitä ladata minnekään.</p>
+<h2>Varmuuskopiot ja vienti</h2>
+<p>Sovellus säilyttää automaattisesti varmuuskopion tiedoistaan sovelluksen sisäisessä tallennustilassa laitteellasi. Jos valitset kansion, sinne tallennetaan lisäksi yksi kopio päivässä (10 viimeisintä säilytetään). CSV-vienti tai jaettava varmuuskopiotiedosto luodaan vain, kun pyydät sitä. Tiedosto luovutetaan valitsemaasi kohteeseen, kuten Tiedostot, Google Drive tai sähköposti, ja siihen sovelletaan kyseisen palvelun omaa tietosuojakäytäntöä.</p>
+<p>Jos puhelimesi Android-järjestelmävarmuuskopiointi on käytössä, Android sisällyttää tämän automaattisen kopion henkilökohtaiseen Google-varmuuskopioosi, jotta tiedot voidaan palauttaa uuteen puhelimeen. Sitä hallinnoi Google, eikä meillä ole siihen pääsyä. PIN-koodiasi ei sisällytetä.</p>
+<h2>Google Drive -varmuuskopiointi (valinnainen)</h2>
+<p>Hedgy voi tallentaa päivittäisen varmuuskopion Google Driveesi. Toiminto on oletuksena pois päältä ja käynnistyy vasta, kun napautat ”Varmuuskopioi Google Driveen” ja kirjaudut Google-tililläsi.</p>
+<ul>
+<li><b>Mitä lähetetään:</b> varmuuskopiotiedosto (JSON), joka sisältää yllä kuvatut sovelluksen tiedot (tapahtumat, luokat, budjetit, tavoitteet, säännöt ja asetukset). PIN-koodiasi ei sisällytetä. Tiedosto lähetetään suoraan puhelimestasi Googlelle salattua yhteyttä (HTTPS) pitkin, eikä se kulje minkään palvelimemme kautta.</li>
+<li><b>Missä sitä säilytetään:</b> ”Hedgy”-kansiossa omassa Google Drivessasi. Päivässä tallennetaan yksi kopio ja 10 viimeisintä säilytetään; vanhemmat Hedgy-kopiot poistetaan automaattisesti.</li>
+<li><b>Käyttöoikeus:</b> Hedgy pyytää vain <code>drive.file</code>-oikeutta, jonka avulla se näkee ja hallitsee ainoastaan itse luomiaan tiedostoja. Se ei voi lukea muita Drivesi tiedostoja.</li>
+<li><b>Palautus:</b> ”Palauta Google Drivesta” lataa uusimman Hedgy-kopion puhelimeesi.</li>
+<li><b>Lopettaminen:</b> ”Katkaise Google Drive -yhteys” lopettaa uusien kopioiden tekemisen. Jo tallennetut kopiot jäävät Driveesi, kunnes poistat ne sieltä. Voit myös milloin tahansa poistaa Hedgyn käyttöoikeuden osoitteessa <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
+</ul>
+<p>Hedgyn tapa käyttää ja siirtää Googlen ohjelmointirajapinnoista saatuja tietoja noudattaa <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a> -käytäntöä, mukaan lukien rajoitetun käytön (Limited Use) vaatimukset. Näitä tietoja käytetään vain varmuuskopiointiin ja palautukseen, niitä ei koskaan jaeta kenellekään eikä koskaan käytetä mainontaan.</p>
+<h2>Käyttöoikeudet</h2>
+<p><b>Internet:</b> käytetään vain valinnaiseen Google Drive -varmuuskopiointiin ja Google Play -ostoihin. Hedgy ei käytä sitä tietojesi lähettämiseen minnekään muualle.<br>
+<b>Ilmoitukset:</b> pyydetään vain, jos otat muistutukset käyttöön. Puhelin ajastaa muistutukset itse, eikä niitä lähetetä palvelimelta.<br>
+<b>Käynnistys laitteen käynnistyessä:</b> käytetään vain muistutusten ajastamiseen uudelleen puhelimen uudelleenkäynnistyksen jälkeen.<br>
+<b>Sormenjälki / kasvojentunnistus:</b> Android hoitaa tunnistuksen; sovellus saa vain tuloksen (onnistui tai epäonnistui).</p>
+<h2>Ostot</h2>
+<p>Jos ostat sovelluksessa tilauksen, Google Play käsittelee maksun <a href="https://policies.google.com/privacy?hl=fi">Googlen tietosuojakäytännön</a> mukaisesti. Saamme vain vahvistuksen siitä, että tilaus on voimassa, emmekä koskaan näe maksutietojasi.</p>
+<h2>Tietojesi poistaminen</h2>
+<p>Voit poistaa kaikki tiedot sovelluksessa (Lisää → Tiedot ja tallennus → Poista tietoja) tai poistamalla sovelluksen. Google Drive -kopiot poistetaan omasta Google Drivestasi (kansio ”Hedgy”). Koska emme säilytä tietojasi, meidän päässämme ei ole mitään poistettavaa.</p>
+<h2>Oikeutesi</h2>
+<p>EU:n yleisen tietosuoja-asetuksen (GDPR) mukaan sinulla on oikeus saada pääsy henkilötietoihisi, oikaista niitä ja poistaa ne. Koska kaikki tietosi ovat omassa hallinnassasi, laitteellasi ja omalla Google-tililläsi, voit käyttää näitä oikeuksia suoraan sovelluksessa ja Google-tililläsi. Jos sinulla on kysyttävää, ota meihin yhteyttä alla. Voit myös tehdä valituksen tietosuojaviranomaiselle (Latviassa: <a href="https://www.dvi.gov.lv">Datu valsts inspekcija</a>).</p>
+<h2>Lapset</h2>
+<p>Hedgyä ei ole tarkoitettu alle 13-vuotiaille lapsille, emmekä tietoisesti kerää lasten tietoja.</p>
+<h2>Muutokset</h2>
+<p>Jos tämä käytäntö muuttuu, päivitetty versio julkaistaan tällä sivulla uuden voimaantulopäivän kanssa.</p>
+<h2>Yhteystiedot</h2>
+<p>Kysymykset tästä käytännöstä: <a href="mailto:lazda.andris1991@gmail.com">lazda.andris1991@gmail.com</a></p>
+</section>
+
+<section id="fr" lang="fr" class="pp" data-title="Hedgy – Politique de confidentialité">
+<h1>Hedgy – Politique de confidentialité</h1>
+<p><i>Date d’entrée en vigueur : 24 octobre 2026</i></p>
+<p class="note">Ceci est une traduction. En cas de divergence, la <a href="?lang=en">version anglaise</a> fait foi.</p>
+<p>La présente politique s’applique à l’application Android Hedgy (paquet <code>com.andrislazda.hedgy</code>), développée par Andris Lazda, Lettonie (« nous », « le développeur »).</p>
+<div class="box"><b>En bref :</b> Hedgy n’a ni comptes, ni serveurs propres, ni outils d’analyse, ni publicité, ni pistage. Vos données financières restent sur votre appareil. Si vous activez la sauvegarde Google Drive, les copies sont envoyées directement dans <b>votre propre</b> Google Drive ; le développeur ne les reçoit jamais et ne peut pas y accéder.</div>
+<h2>Données que nous collectons</h2>
+<p>Aucune. Nous ne recevons ni vos transactions, ni vos relevés bancaires, ni les identifiants de votre appareil, ni votre position, ni vos contacts, ni de statistiques d’utilisation.</p>
+<h2>Données stockées sur votre appareil</h2>
+<p>Les transactions, catégories, budgets, objectifs, règles et paramètres que vous saisissez ou importez sont stockés uniquement dans l’espace de stockage de l’application sur votre appareil. Les fichiers de relevés bancaires sont lus et traités sur l’appareil et ne sont jamais envoyés nulle part.</p>
+<h2>Sauvegardes et exports</h2>
+<p>L’application conserve automatiquement une copie de sauvegarde de ses données dans son stockage interne sur votre appareil. Si vous choisissez un dossier, une copie par jour y est également enregistrée (les 10 dernières sont conservées). Un export CSV ou un fichier de sauvegarde à partager n’est créé que lorsque vous le demandez. Le fichier est transmis à la destination de votre choix, par exemple Fichiers, Google Drive ou e-mail, et la politique de confidentialité de ce service s’applique.</p>
+<p>Si la sauvegarde système Android est activée sur votre téléphone, Android inclut cette copie automatique dans votre sauvegarde Google personnelle afin que vos données puissent être restaurées sur un nouveau téléphone. Elle est gérée par Google et nous n’y avons pas accès. Votre code PIN n’est pas inclus.</p>
+<h2>Sauvegarde Google Drive (facultative)</h2>
+<p>Hedgy peut enregistrer chaque jour une sauvegarde dans votre Google Drive. Cette fonction est désactivée par défaut et ne démarre qu’après avoir appuyé sur « Sauvegarder dans Google Drive » et vous être connecté avec votre compte Google.</p>
+<ul>
+<li><b>Ce qui est envoyé :</b> un fichier de sauvegarde (JSON) contenant les données de l’application décrites ci-dessus (transactions, catégories, budgets, objectifs, règles et paramètres). Votre code PIN n’est pas inclus. Le fichier est envoyé directement de votre téléphone à Google via une connexion chiffrée (HTTPS) et ne passe par aucun de nos serveurs.</li>
+<li><b>Où il est stocké :</b> dans un dossier « Hedgy » de votre propre Google Drive. Une copie par jour est enregistrée et les 10 dernières sont conservées ; les copies Hedgy plus anciennes sont supprimées automatiquement.</li>
+<li><b>Accès :</b> Hedgy demande uniquement l’autorisation <code>drive.file</code>, qui lui permet de voir et de gérer seulement les fichiers qu’elle a elle-même créés. Elle ne peut lire aucun autre fichier de votre Drive.</li>
+<li><b>Restauration :</b> « Restaurer depuis Google Drive » télécharge la copie Hedgy la plus récente sur votre téléphone.</li>
+<li><b>Arrêt :</b> « Déconnecter Google Drive » arrête la création de nouvelles copies. Les copies déjà enregistrées restent dans votre Drive jusqu’à ce que vous les y supprimiez. Vous pouvez aussi retirer l’accès de Hedgy à tout moment sur <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
+</ul>
+<p>L’utilisation et le transfert par Hedgy des informations reçues des API Google respectent la <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, y compris les exigences d’utilisation limitée (Limited Use). Ces données servent uniquement à la sauvegarde et à la restauration, ne sont jamais partagées avec quiconque et ne sont jamais utilisées à des fins publicitaires.</p>
+<h2>Autorisations</h2>
+<p><b>Internet :</b> utilisé uniquement pour la sauvegarde Google Drive facultative et pour les achats Google Play. Hedgy ne l’utilise pas pour envoyer vos données ailleurs.<br>
+<b>Notifications :</b> demandées uniquement si vous activez les rappels. Les rappels sont programmés par le téléphone lui-même et ne sont pas envoyés depuis un serveur.<br>
+<b>Lancement au démarrage :</b> utilisé uniquement pour reprogrammer les rappels après le redémarrage du téléphone.<br>
+<b>Empreinte digitale / reconnaissance faciale :</b> gérée par Android ; l’application reçoit uniquement le résultat (réussite ou échec).</p>
+<h2>Achats</h2>
+<p>Si vous achetez un abonnement dans l’application, Google Play traite le paiement conformément aux <a href="https://policies.google.com/privacy?hl=fr">règles de confidentialité de Google</a>. Nous recevons uniquement la confirmation que l’abonnement est actif et ne voyons jamais vos données de paiement.</p>
+<h2>Suppression de vos données</h2>
+<p>Vous pouvez supprimer toutes les données dans l’application (Plus → Données et stockage → Supprimer des données) ou en désinstallant l’application. Les copies Google Drive se suppriment dans votre Google Drive (dossier « Hedgy »). Comme nous ne stockons pas vos données, nous n’avons rien à supprimer de notre côté.</p>
+<h2>Vos droits</h2>
+<p>En vertu du Règlement général sur la protection des données (RGPD), vous avez le droit d’accéder à vos données personnelles, de les rectifier et de les supprimer. Comme toutes vos données restent sous votre contrôle, sur votre appareil et dans votre propre compte Google, vous pouvez exercer ces droits directement dans l’application et dans votre compte Google. Pour toute question, contactez-nous ci-dessous. Vous pouvez également introduire une réclamation auprès de votre autorité de protection des données (en Lettonie : <a href="https://www.dvi.gov.lv">Datu valsts inspekcija</a>).</p>
+<h2>Enfants</h2>
+<p>Hedgy ne s’adresse pas aux enfants de moins de 13 ans et nous ne collectons pas sciemment de données concernant des enfants.</p>
+<h2>Modifications</h2>
+<p>Si cette politique change, la version mise à jour sera publiée sur cette page avec une nouvelle date d’entrée en vigueur.</p>
+<h2>Contact</h2>
+<p>Questions sur cette politique : <a href="mailto:lazda.andris1991@gmail.com">lazda.andris1991@gmail.com</a></p>
+</section>
+
+<section id="it" lang="it" class="pp" data-title="Hedgy – Informativa sulla privacy">
+<h1>Hedgy – Informativa sulla privacy</h1>
+<p><i>In vigore dal: 24 ottobre 2026</i></p>
+<p class="note">Questa è una traduzione. In caso di discrepanze prevale la <a href="?lang=en">versione inglese</a>.</p>
+<p>La presente informativa si applica all’app Android Hedgy (pacchetto <code>com.andrislazda.hedgy</code>), sviluppata da Andris Lazda, Lettonia («noi», «lo sviluppatore»).</p>
+<div class="box"><b>In breve:</b> Hedgy non ha account, né server propri, né analisi, né pubblicità, né tracciamento. I tuoi dati finanziari restano sul tuo dispositivo. Se attivi il backup su Google Drive, le copie finiscono direttamente nel <b>tuo</b> Google Drive; lo sviluppatore non le riceve mai e non può accedervi.</div>
+<h2>Dati che raccogliamo</h2>
+<p>Nessuno. Non riceviamo le tue transazioni, gli estratti conto, gli identificatori del dispositivo, la posizione, i contatti o statistiche di utilizzo.</p>
+<h2>Dati memorizzati sul tuo dispositivo</h2>
+<p>Transazioni, categorie, budget, obiettivi, regole e impostazioni che inserisci o importi vengono salvati solo nella memoria dell’app sul tuo dispositivo. I file degli estratti conto vengono letti ed elaborati sul dispositivo e non vengono mai caricati da nessuna parte.</p>
+<h2>Backup ed esportazioni</h2>
+<p>L’app conserva automaticamente una copia di backup dei propri dati nella memoria interna dell’app sul tuo dispositivo. Se scegli una cartella, vi viene salvata anche una copia al giorno (vengono conservate le ultime 10). Un’esportazione CSV o un file di backup da condividere viene creato solo quando lo richiedi. Il file viene consegnato alla destinazione che scegli, ad esempio File, Google Drive o e-mail, e si applica l’informativa sulla privacy di quel servizio.</p>
+<p>Se sul telefono è attivo il backup di sistema di Android, Android include questa copia automatica nel tuo backup personale di Google, così i dati possono essere ripristinati su un nuovo telefono. È gestito da Google e noi non vi abbiamo accesso. Il tuo PIN non è incluso.</p>
+<h2>Backup su Google Drive (facoltativo)</h2>
+<p>Hedgy può salvare ogni giorno un backup nel tuo Google Drive. La funzione è disattivata per impostazione predefinita e si avvia solo dopo che tocchi «Backup su Google Drive» e accedi con il tuo account Google.</p>
+<ul>
+<li><b>Cosa viene inviato:</b> un file di backup (JSON) con i dati dell’app descritti sopra (transazioni, categorie, budget, obiettivi, regole e impostazioni). Il tuo PIN non è incluso. Il file viene inviato direttamente dal tuo telefono a Google tramite una connessione cifrata (HTTPS) e non passa da alcun nostro server.</li>
+<li><b>Dove viene salvato:</b> in una cartella «Hedgy» nel tuo Google Drive. Viene salvata una copia al giorno e vengono conservate le ultime 10; le copie Hedgy più vecchie vengono eliminate automaticamente.</li>
+<li><b>Accesso:</b> Hedgy richiede solo l’autorizzazione <code>drive.file</code>, che le consente di vedere e gestire unicamente i file creati da lei stessa. Non può leggere nessun altro file del tuo Drive.</li>
+<li><b>Ripristino:</b> «Ripristina da Google Drive» scarica sul telefono la copia Hedgy più recente.</li>
+<li><b>Disattivazione:</b> «Disconnetti Google Drive» interrompe la creazione di nuove copie. Le copie già salvate restano nel tuo Drive finché non le elimini lì. Puoi anche revocare l’accesso di Hedgy in qualsiasi momento su <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
+</ul>
+<p>L’uso e il trasferimento da parte di Hedgy delle informazioni ricevute dalle API di Google rispettano la <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, compresi i requisiti di uso limitato (Limited Use). Questi dati vengono usati solo per backup e ripristino, non vengono mai condivisi con nessuno e non vengono mai usati per la pubblicità.</p>
+<h2>Autorizzazioni</h2>
+<p><b>Internet:</b> usato solo per il backup facoltativo su Google Drive e per gli acquisti su Google Play. Hedgy non lo usa per inviare i tuoi dati altrove.<br>
+<b>Notifiche:</b> richieste solo se attivi i promemoria. I promemoria sono programmati dal telefono stesso e non vengono inviati da un server.<br>
+<b>Avvio all’accensione:</b> usato solo per riprogrammare i promemoria dopo il riavvio del telefono.<br>
+<b>Impronta digitale / riconoscimento del volto:</b> gestiti da Android; l’app riceve solo il risultato (riuscito o non riuscito).</p>
+<h2>Acquisti</h2>
+<p>Se acquisti un abbonamento nell’app, Google Play elabora il pagamento secondo le <a href="https://policies.google.com/privacy?hl=it">norme sulla privacy di Google</a>. Riceviamo solo la conferma che l’abbonamento è attivo e non vediamo mai i tuoi dati di pagamento.</p>
+<h2>Eliminazione dei dati</h2>
+<p>Puoi eliminare tutti i dati nell’app (Altro → Dati e archiviazione → Elimina dati) o disinstallando l’app. Le copie su Google Drive si eliminano nel tuo Google Drive (cartella «Hedgy»). Poiché non conserviamo i tuoi dati, da parte nostra non c’è nulla da eliminare.</p>
+<h2>I tuoi diritti</h2>
+<p>Ai sensi del Regolamento generale sulla protezione dei dati dell’UE (GDPR) hai il diritto di accedere ai tuoi dati personali, di rettificarli e di cancellarli. Poiché tutti i tuoi dati restano sotto il tuo controllo, sul dispositivo e nel tuo account Google, puoi esercitare questi diritti direttamente nell’app e nel tuo account Google. Per qualsiasi dubbio contattaci qui sotto. Puoi anche proporre reclamo alla tua autorità per la protezione dei dati (in Lettonia: <a href="https://www.dvi.gov.lv">Datu valsts inspekcija</a>).</p>
+<h2>Minori</h2>
+<p>Hedgy non è destinata a minori di 13 anni e non raccogliamo consapevolmente dati di minori.</p>
+<h2>Modifiche</h2>
+<p>Se questa informativa cambia, la versione aggiornata sarà pubblicata su questa pagina con una nuova data di entrata in vigore.</p>
+<h2>Contatti</h2>
+<p>Domande su questa informativa: <a href="mailto:lazda.andris1991@gmail.com">lazda.andris1991@gmail.com</a></p>
+</section>
+
+<section id="lt" lang="lt" class="pp" data-title="Hedgy – Privatumo politika">
+<h1>Hedgy – Privatumo politika</h1>
+<p><i>Įsigalioja: 2026 m. spalio 24 d.</i></p>
+<p class="note">Tai vertimas. Esant neatitikimų, viršenybę turi <a href="?lang=en">anglų kalbos versija</a>.</p>
+<p>Ši politika taikoma „Android“ programėlei Hedgy (paketas <code>com.andrislazda.hedgy</code>), kurią kuria Andris Lazda, Latvija („mes“, „kūrėjas“).</p>
+<div class="box"><b>Trumpai:</b> Hedgy neturi paskyrų, savų serverių, analitikos, reklamų ar sekimo. Jūsų finansiniai duomenys lieka jūsų įrenginyje. Jei įjungsite atsarginę kopiją Google Drive, kopijos keliauja tiesiai į <b>jūsų pačių</b> Google Drive; kūrėjas niekada jų negauna ir negali jų pasiekti.</div>
+<h2>Kokius duomenis renkame</h2>
+<p>Jokių. Negauname jūsų operacijų, banko išrašų, įrenginio identifikatorių, vietos, kontaktų ar naudojimo statistikos.</p>
+<h2>Jūsų įrenginyje saugomi duomenys</h2>
+<p>Operacijos, kategorijos, biudžetai, tikslai, taisyklės ir nustatymai, kuriuos įvedate ar importuojate, saugomi tik programėlės saugykloje jūsų įrenginyje. Banko išrašų failai nuskaitomi ir apdorojami įrenginyje ir niekur neįkeliami.</p>
+<h2>Atsarginės kopijos ir eksportas</h2>
+<p>Programėlė automatiškai saugo savo duomenų atsarginę kopiją programėlės vidinėje saugykloje jūsų įrenginyje. Jei pasirenkate aplanką, jame taip pat išsaugoma po vieną kopiją per dieną (saugomos paskutinės 10). CSV eksportas ar atsarginės kopijos failas bendrinimui sukuriamas tik tada, kai to paprašote. Failas perduodamas į jūsų pasirinktą vietą, pvz., „Failai“, Google Drive ar el. paštą, ir jam taikoma tos paslaugos privatumo politika.</p>
+<p>Jei jūsų telefone įjungtas „Android“ sistemos atsarginis kopijavimas, „Android“ įtraukia šią automatinę kopiją į jūsų asmeninę Google atsarginę kopiją, kad duomenis būtų galima atkurti naujame telefone. Ją valdo Google, ir mes neturime prie jos prieigos. Jūsų PIN kodas neįtraukiamas.</p>
+<h2>Atsarginė kopija Google Drive (neprivaloma)</h2>
+<p>Hedgy gali kasdien išsaugoti atsarginę kopiją jūsų Google Drive. Pagal numatytuosius nustatymus ši funkcija išjungta ir pradeda veikti tik tada, kai paliečiate „Atsarginė kopija Google Drive“ ir prisijungiate su savo Google paskyra.</p>
+<ul>
+<li><b>Kas siunčiama:</b> atsarginės kopijos failas (JSON) su aukščiau aprašytais programėlės duomenimis (operacijos, kategorijos, biudžetai, tikslai, taisyklės ir nustatymai). Jūsų PIN kodas neįtraukiamas. Failas siunčiamas tiesiai iš jūsų telefono į Google šifruotu ryšiu (HTTPS) ir nekeliauja per jokius mūsų serverius.</li>
+<li><b>Kur saugoma:</b> aplanke „Hedgy“ jūsų pačių Google Drive. Per dieną išsaugoma viena kopija, saugomos paskutinės 10; senesnės Hedgy kopijos ištrinamos automatiškai.</li>
+<li><b>Prieiga:</b> Hedgy prašo tik <code>drive.file</code> leidimo, kuris leidžia matyti ir tvarkyti tik pačios programėlės sukurtus failus. Kitų jūsų Drive failų ji perskaityti negali.</li>
+<li><b>Atkūrimas:</b> „Atkurti iš Google Drive“ atsisiunčia naujausią Hedgy kopiją į jūsų telefoną.</li>
+<li><b>Išjungimas:</b> „Atjungti Google Drive“ sustabdo naujų kopijų kūrimą. Jau išsaugotos kopijos lieka jūsų Drive, kol jų ten neištrinsite. Hedgy prieigą taip pat galite bet kada atšaukti adresu <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
+</ul>
+<p>Hedgy iš Google API gautos informacijos naudojimas ir perdavimas atitinka <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, įskaitant riboto naudojimo (Limited Use) reikalavimus. Šie duomenys naudojami tik atsarginėms kopijoms ir atkūrimui, niekada niekam neperduodami ir niekada nenaudojami reklamai.</p>
+<h2>Leidimai</h2>
+<p><b>Internetas:</b> naudojamas tik neprivalomai atsarginei kopijai Google Drive ir pirkimams per Google Play. Hedgy nenaudoja jo jūsų duomenims siųsti kitur.<br>
+<b>Pranešimai:</b> prašomi tik tada, jei įjungiate priminimus. Priminimus suplanuoja pats telefonas, jie nesiunčiami iš serverio.<br>
+<b>Paleidimas įjungus įrenginį:</b> naudojamas tik tam, kad po telefono paleidimo iš naujo priminimai būtų vėl suplanuoti.<br>
+<b>Piršto atspaudas / veido atpažinimas:</b> tai atlieka „Android“; programėlė gauna tik rezultatą (pavyko ar nepavyko).</p>
+<h2>Pirkimai</h2>
+<p>Jei programėlėje įsigyjate prenumeratą, mokėjimą apdoroja Google Play pagal <a href="https://policies.google.com/privacy?hl=lt">Google privatumo politiką</a>. Gauname tik patvirtinimą, kad prenumerata aktyvi, ir niekada nematome jūsų mokėjimo duomenų.</p>
+<h2>Duomenų ištrynimas</h2>
+<p>Visus duomenis galite ištrinti programėlėje (Daugiau → Duomenys ir saugykla → Ištrinti duomenis) arba pašalinę programėlę. Google Drive kopijas ištrinate savo Google Drive (aplankas „Hedgy“). Kadangi mes jūsų duomenų nesaugome, mūsų pusėje nėra ko ištrinti.</p>
+<h2>Jūsų teisės</h2>
+<p>Pagal ES Bendrąjį duomenų apsaugos reglamentą (BDAR) turite teisę susipažinti su savo asmens duomenimis, juos ištaisyti ir ištrinti. Kadangi visi jūsų duomenys lieka jūsų kontrolėje, jūsų įrenginyje ir jūsų pačių Google paskyroje, šiomis teisėmis galite naudotis tiesiogiai programėlėje ir savo Google paskyroje. Kilus klausimų, susisiekite su mumis toliau nurodytu adresu. Taip pat galite pateikti skundą duomenų apsaugos priežiūros institucijai (Latvijoje: <a href="https://www.dvi.gov.lv">Datu valsts inspekcija</a>).</p>
+<h2>Vaikai</h2>
+<p>Hedgy nėra skirta jaunesniems nei 13 metų vaikams, ir mes sąmoningai nerenkame vaikų duomenų.</p>
+<h2>Pakeitimai</h2>
+<p>Jei ši politika pasikeis, atnaujinta versija bus paskelbta šiame puslapyje su nauja įsigaliojimo data.</p>
+<h2>Kontaktai</h2>
+<p>Klausimai dėl šios politikos: <a href="mailto:lazda.andris1991@gmail.com">lazda.andris1991@gmail.com</a></p>
+</section>
+
+<section id="nl" lang="nl" class="pp" data-title="Hedgy – Privacybeleid">
+<h1>Hedgy – Privacybeleid</h1>
+<p><i>Ingangsdatum: 24 oktober 2026</i></p>
+<p class="note">Dit is een vertaling. Bij verschillen is de <a href="?lang=en">Engelse versie</a> leidend.</p>
+<p>Dit beleid geldt voor de Android-app Hedgy (pakket <code>com.andrislazda.hedgy</code>), ontwikkeld door Andris Lazda, Letland (‘wij’, ‘de ontwikkelaar’).</p>
+<div class="box"><b>Kort gezegd:</b> Hedgy heeft geen accounts, geen eigen servers, geen analyse, geen advertenties en geen tracking. Je financiële gegevens blijven op je apparaat. Als je de back-up naar Google Drive inschakelt, gaan de kopieën rechtstreeks naar <b>je eigen</b> Google Drive; de ontwikkelaar ontvangt ze nooit en heeft er geen toegang toe.</div>
+<h2>Gegevens die wij verzamelen</h2>
+<p>Geen. Wij ontvangen je transacties, bankafschriften, apparaat-ID’s, locatie, contacten of gebruiksstatistieken niet.</p>
+<h2>Gegevens die op je apparaat worden opgeslagen</h2>
+<p>Transacties, categorieën, budgetten, doelen, regels en instellingen die je invoert of importeert, worden alleen in de opslag van de app op je apparaat bewaard. Bankafschriftbestanden worden op het apparaat gelezen en verwerkt en nergens naartoe geüpload.</p>
+<h2>Back-ups en exports</h2>
+<p>De app bewaart automatisch een back-up van zijn gegevens in de interne opslag van de app op je apparaat. Als je een map kiest, wordt daar ook één kopie per dag opgeslagen (de laatste 10 blijven bewaard). Een CSV-export of een back-upbestand om te delen wordt alleen gemaakt als je daarom vraagt. Het bestand wordt doorgegeven aan de bestemming die je kiest, zoals Bestanden, Google Drive of e-mail, en het privacybeleid van die dienst is van toepassing.</p>
+<p>Als Android-systeemback-up op je telefoon is ingeschakeld, neemt Android deze automatische kopie op in je persoonlijke Google-back-up, zodat je gegevens op een nieuwe telefoon kunnen worden hersteld. Dit wordt beheerd door Google en wij hebben er geen toegang toe. Je pincode wordt niet meegenomen.</p>
+<h2>Back-up naar Google Drive (optioneel)</h2>
+<p>Hedgy kan dagelijks een back-up opslaan in je Google Drive. Dit staat standaard uit en begint pas nadat je op ‘Back-up naar Google Drive’ tikt en inlogt met je Google-account.</p>
+<ul>
+<li><b>Wat wordt verzonden:</b> een back-upbestand (JSON) met de hierboven beschreven app-gegevens (transacties, categorieën, budgetten, doelen, regels en instellingen). Je pincode wordt niet meegenomen. Het bestand wordt via een versleutelde verbinding (HTTPS) rechtstreeks van je telefoon naar Google verzonden en gaat niet via een server van ons.</li>
+<li><b>Waar het wordt opgeslagen:</b> in een map ‘Hedgy’ in je eigen Google Drive. Er wordt één kopie per dag opgeslagen en de laatste 10 blijven bewaard; oudere Hedgy-kopieën worden automatisch verwijderd.</li>
+<li><b>Toegang:</b> Hedgy vraagt alleen de machtiging <code>drive.file</code>, waarmee de app uitsluitend de bestanden kan zien en beheren die hij zelf heeft gemaakt. Andere bestanden in je Drive kan hij niet lezen.</li>
+<li><b>Herstellen:</b> ‘Herstellen uit Google Drive’ downloadt de nieuwste Hedgy-kopie naar je telefoon.</li>
+<li><b>Stoppen:</b> ‘Google Drive loskoppelen’ stopt nieuwe kopieën. Al opgeslagen kopieën blijven in je Drive totdat je ze daar verwijdert. Je kunt de toegang van Hedgy ook op elk moment intrekken via <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
+</ul>
+<p>Het gebruik en de overdracht door Hedgy van informatie die van Google-API’s wordt ontvangen, voldoen aan de <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, inclusief de vereisten voor beperkt gebruik (Limited Use). Deze gegevens worden alleen gebruikt voor back-up en herstel, worden nooit met anderen gedeeld en nooit voor advertenties gebruikt.</p>
+<h2>Machtigingen</h2>
+<p><b>Internet:</b> wordt alleen gebruikt voor de optionele back-up naar Google Drive en voor aankopen via Google Play. Hedgy gebruikt het niet om je gegevens ergens anders naartoe te sturen.<br>
+<b>Meldingen:</b> worden alleen gevraagd als je herinneringen inschakelt. Herinneringen worden door de telefoon zelf ingepland en niet vanaf een server verstuurd.<br>
+<b>Uitvoeren bij opstarten:</b> wordt alleen gebruikt om herinneringen opnieuw in te plannen nadat de telefoon opnieuw is opgestart.<br>
+<b>Vingerafdruk / gezichtsherkenning:</b> wordt door Android afgehandeld; de app ontvangt alleen het resultaat (gelukt of mislukt).</p>
+<h2>Aankopen</h2>
+<p>Als je in de app een abonnement koopt, verwerkt Google Play de betaling volgens het <a href="https://policies.google.com/privacy?hl=nl">privacybeleid van Google</a>. Wij ontvangen alleen de bevestiging dat het abonnement actief is en zien je betaalgegevens nooit.</p>
+<h2>Je gegevens verwijderen</h2>
+<p>Je kunt alle gegevens in de app verwijderen (Meer → Gegevens en opslag → Gegevens verwijderen) of door de app te verwijderen. Kopieën in Google Drive verwijder je in je Google Drive (map ‘Hedgy’). Omdat wij je gegevens niet opslaan, hoeven wij aan onze kant niets te verwijderen.</p>
+<h2>Je rechten</h2>
+<p>Op grond van de Algemene verordening gegevensbescherming (AVG) van de EU heb je het recht op inzage, correctie en verwijdering van je persoonsgegevens. Omdat al je gegevens onder jouw controle blijven, op je apparaat en in je eigen Google-account, kun je deze rechten rechtstreeks in de app en in je Google-account uitoefenen. Heb je vragen, neem dan hieronder contact met ons op. Je kunt ook een klacht indienen bij je toezichthouder voor gegevensbescherming (in Letland: <a href="https://www.dvi.gov.lv">Datu valsts inspekcija</a>).</p>
+<h2>Kinderen</h2>
+<p>Hedgy is niet bedoeld voor kinderen jonger dan 13 jaar en wij verzamelen niet bewust gegevens van kinderen.</p>
+<h2>Wijzigingen</h2>
+<p>Als dit beleid verandert, wordt de bijgewerkte versie op deze pagina gepubliceerd met een nieuwe ingangsdatum.</p>
+<h2>Contact</h2>
+<p>Vragen over dit beleid: <a href="mailto:lazda.andris1991@gmail.com">lazda.andris1991@gmail.com</a></p>
+</section>
+
+<section id="pl" lang="pl" class="pp" data-title="Hedgy – Polityka prywatności">
+<h1>Hedgy – Polityka prywatności</h1>
+<p><i>Obowiązuje od: 24 października 2026 r.</i></p>
+<p class="note">To jest tłumaczenie. W razie rozbieżności rozstrzygająca jest <a href="?lang=en">wersja angielska</a>.</p>
+<p>Niniejsza polityka dotyczy aplikacji Hedgy na Androida (pakiet <code>com.andrislazda.hedgy</code>), tworzonej przez Andrisa Lazdę, Łotwa („my”, „deweloper”).</p>
+<div class="box"><b>W skrócie:</b> Hedgy nie ma kont, własnych serwerów, analityki, reklam ani śledzenia. Twoje dane finansowe pozostają na Twoim urządzeniu. Jeśli włączysz kopię zapasową na Dysku Google, kopie trafiają bezpośrednio na <b>Twój własny</b> Dysk Google; deweloper nigdy ich nie otrzymuje i nie ma do nich dostępu.</div>
+<h2>Jakie dane zbieramy</h2>
+<p>Żadnych. Nie otrzymujemy Twoich transakcji, wyciągów bankowych, identyfikatorów urządzenia, lokalizacji, kontaktów ani statystyk użytkowania.</p>
+<h2>Dane przechowywane na Twoim urządzeniu</h2>
+<p>Transakcje, kategorie, budżety, cele, reguły i ustawienia, które wprowadzasz lub importujesz, są przechowywane wyłącznie w pamięci aplikacji na Twoim urządzeniu. Pliki wyciągów bankowych są odczytywane i przetwarzane na urządzeniu i nigdzie nie są przesyłane.</p>
+<h2>Kopie zapasowe i eksport</h2>
+<p>Aplikacja automatycznie przechowuje kopię zapasową swoich danych w pamięci wewnętrznej aplikacji na Twoim urządzeniu. Jeśli wybierzesz folder, zapisywana jest w nim również jedna kopia dziennie (przechowywanych jest 10 ostatnich). Eksport CSV lub plik kopii zapasowej do udostępnienia jest tworzony tylko na Twoje żądanie. Plik jest przekazywany do wybranego przez Ciebie miejsca, np. Pliki, Dysk Google lub e-mail, i obowiązuje polityka prywatności tej usługi.</p>
+<p>Jeśli w telefonie włączona jest systemowa kopia zapasowa Androida, Android dołącza tę automatyczną kopię do Twojej osobistej kopii zapasowej Google, aby można było przywrócić dane na nowym telefonie. Zarządza nią Google i nie mamy do niej dostępu. Twój PIN nie jest w niej zawarty.</p>
+<h2>Kopia zapasowa na Dysku Google (opcjonalna)</h2>
+<p>Hedgy może codziennie zapisywać kopię zapasową na Twoim Dysku Google. Funkcja jest domyślnie wyłączona i uruchamia się dopiero po dotknięciu „Kopia zapasowa na Dysku Google” i zalogowaniu się na konto Google.</p>
+<ul>
+<li><b>Co jest wysyłane:</b> plik kopii zapasowej (JSON) z opisanymi wyżej danymi aplikacji (transakcje, kategorie, budżety, cele, reguły i ustawienia). Twój PIN nie jest w nim zawarty. Plik jest wysyłany bezpośrednio z Twojego telefonu do Google przez szyfrowane połączenie (HTTPS) i nie przechodzi przez żaden nasz serwer.</li>
+<li><b>Gdzie jest przechowywany:</b> w folderze „Hedgy” na Twoim własnym Dysku Google. Zapisywana jest jedna kopia dziennie i przechowywanych jest 10 ostatnich; starsze kopie Hedgy są usuwane automatycznie.</li>
+<li><b>Dostęp:</b> Hedgy prosi tylko o uprawnienie <code>drive.file</code>, które pozwala widzieć i zarządzać wyłącznie plikami utworzonymi przez samą aplikację. Nie może odczytać żadnych innych plików na Twoim Dysku.</li>
+<li><b>Przywracanie:</b> „Przywróć z Dysku Google” pobiera na telefon najnowszą kopię Hedgy.</li>
+<li><b>Wyłączenie:</b> „Odłącz Dysk Google” zatrzymuje tworzenie nowych kopii. Zapisane już kopie pozostają na Twoim Dysku, dopóki ich tam nie usuniesz. Dostęp Hedgy możesz też w każdej chwili cofnąć na stronie <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
+</ul>
+<p>Wykorzystywanie i przekazywanie przez Hedgy informacji otrzymanych z interfejsów API Google jest zgodne z <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, w tym z wymogami ograniczonego użycia (Limited Use). Dane te służą wyłącznie do tworzenia i przywracania kopii zapasowych, nigdy nie są nikomu udostępniane i nigdy nie są wykorzystywane do reklam.</p>
+<h2>Uprawnienia</h2>
+<p><b>Internet:</b> używany tylko do opcjonalnej kopii zapasowej na Dysku Google i do zakupów w Google Play. Hedgy nie używa go do wysyłania Twoich danych gdziekolwiek indziej.<br>
+<b>Powiadomienia:</b> aplikacja prosi o nie tylko wtedy, gdy włączysz przypomnienia. Przypomnienia planuje sam telefon; nie są wysyłane z serwera.<br>
+<b>Uruchamianie przy starcie:</b> używane tylko do ponownego zaplanowania przypomnień po restarcie telefonu.<br>
+<b>Odcisk palca / rozpoznawanie twarzy:</b> obsługiwane przez Androida; aplikacja otrzymuje tylko wynik (powodzenie lub niepowodzenie).</p>
+<h2>Zakupy</h2>
+<p>Jeśli kupisz subskrypcję w aplikacji, płatność przetwarza Google Play zgodnie z <a href="https://policies.google.com/privacy?hl=pl">polityką prywatności Google</a>. Otrzymujemy tylko potwierdzenie, że subskrypcja jest aktywna, i nigdy nie widzimy Twoich danych płatniczych.</p>
+<h2>Usuwanie danych</h2>
+<p>Wszystkie dane możesz usunąć w aplikacji (Więcej → Dane i pamięć → Usuń dane) lub odinstalowując aplikację. Kopie na Dysku Google usuwasz na swoim Dysku Google (folder „Hedgy”). Ponieważ nie przechowujemy Twoich danych, po naszej stronie nie ma czego usuwać.</p>
+<h2>Twoje prawa</h2>
+<p>Zgodnie z ogólnym rozporządzeniem UE o ochronie danych (RODO) masz prawo dostępu do swoich danych osobowych, ich sprostowania i usunięcia. Ponieważ wszystkie Twoje dane pozostają pod Twoją kontrolą, na Twoim urządzeniu i na Twoim własnym koncie Google, możesz korzystać z tych praw bezpośrednio w aplikacji i na swoim koncie Google. W razie pytań skontaktuj się z nami poniżej. Możesz także złożyć skargę do swojego organu ochrony danych (na Łotwie: <a href="https://www.dvi.gov.lv">Datu valsts inspekcija</a>).</p>
+<h2>Dzieci</h2>
+<p>Hedgy nie jest przeznaczona dla dzieci poniżej 13 roku życia i świadomie nie zbieramy danych dzieci.</p>
+<h2>Zmiany</h2>
+<p>Jeśli niniejsza polityka się zmieni, zaktualizowana wersja zostanie opublikowana na tej stronie z nową datą obowiązywania.</p>
+<h2>Kontakt</h2>
+<p>Pytania dotyczące tej polityki: <a href="mailto:lazda.andris1991@gmail.com">lazda.andris1991@gmail.com</a></p>
+</section>
+
+<section id="pt" lang="pt" class="pp" data-title="Hedgy – Política de privacidade">
+<h1>Hedgy – Política de privacidade</h1>
+<p><i>Data de vigência: 24 de outubro de 2026</i></p>
+<p class="note">Esta é uma tradução. Em caso de divergência, prevalece a <a href="?lang=en">versão em inglês</a>.</p>
+<p>Esta política se aplica ao aplicativo Android Hedgy (pacote <code>com.andrislazda.hedgy</code>), desenvolvido por Andris Lazda, Letônia ("nós", "o desenvolvedor").</p>
+<div class="box"><b>Em resumo:</b> o Hedgy não tem contas, servidores próprios, análises, publicidade nem rastreamento. Seus dados financeiros ficam no seu dispositivo. Se você ativar o backup no Google Drive, as cópias vão direto para o <b>seu próprio</b> Google Drive; o desenvolvedor nunca as recebe e não pode acessá-las.</div>
+<h2>Dados que coletamos</h2>
+<p>Nenhum. Não recebemos suas transações, extratos bancários, identificadores do dispositivo, localização, contatos nem estatísticas de uso.</p>
+<h2>Dados armazenados no seu dispositivo</h2>
+<p>Transações, categorias, orçamentos, metas, regras e configurações que você insere ou importa são armazenados apenas no armazenamento do aplicativo no seu dispositivo. Os arquivos de extratos bancários são lidos e processados no dispositivo e nunca são enviados para lugar nenhum.</p>
+<h2>Backups e exportações</h2>
+<p>O aplicativo mantém automaticamente uma cópia de backup dos seus dados no armazenamento interno do aplicativo no seu dispositivo. Se você escolher uma pasta, uma cópia por dia também é salva nela (as 10 últimas são mantidas). Uma exportação CSV ou um arquivo de backup para compartilhar só é criado quando você pede. O arquivo é entregue ao destino que você escolher, como Arquivos, Google Drive ou e-mail, e a política de privacidade desse serviço se aplica.</p>
+<p>Se o backup do sistema Android estiver ativado no seu celular, o Android inclui essa cópia automática no seu backup pessoal do Google para que seus dados possam ser restaurados em um celular novo. Isso é gerenciado pelo Google e não temos acesso. Seu PIN não é incluído.</p>
+<h2>Backup no Google Drive (opcional)</h2>
+<p>O Hedgy pode salvar um backup diário no seu Google Drive. Isso fica desativado por padrão e só começa depois que você toca em "Backup no Google Drive" e entra com sua conta do Google.</p>
+<ul>
+<li><b>O que é enviado:</b> um arquivo de backup (JSON) com os dados do aplicativo descritos acima (transações, categorias, orçamentos, metas, regras e configurações). Seu PIN não é incluído. O arquivo é enviado diretamente do seu celular para o Google por uma conexão criptografada (HTTPS) e não passa por nenhum servidor nosso.</li>
+<li><b>Onde fica armazenado:</b> em uma pasta "Hedgy" no seu próprio Google Drive. Uma cópia por dia é salva e as 10 últimas são mantidas; cópias mais antigas do Hedgy são excluídas automaticamente.</li>
+<li><b>Acesso:</b> o Hedgy solicita apenas a permissão <code>drive.file</code>, que permite ver e gerenciar somente os arquivos criados por ele mesmo. Ele não consegue ler nenhum outro arquivo do seu Drive.</li>
+<li><b>Restaurar:</b> "Restaurar do Google Drive" baixa a cópia mais recente do Hedgy para o seu celular.</li>
+<li><b>Desativar:</b> "Desconectar o Google Drive" interrompe novas cópias. As cópias já salvas permanecem no seu Drive até você excluí-las lá. Você também pode remover o acesso do Hedgy a qualquer momento em <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
+</ul>
+<p>O uso e a transferência, pelo Hedgy, de informações recebidas das APIs do Google seguem a <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, incluindo os requisitos de uso limitado (Limited Use). Esses dados são usados apenas para backup e restauração, nunca são compartilhados com ninguém e nunca são usados para publicidade.</p>
+<h2>Permissões</h2>
+<p><b>Internet:</b> usada apenas para o backup opcional no Google Drive e para compras no Google Play. O Hedgy não a usa para enviar seus dados para outro lugar.<br>
+<b>Notificações:</b> só são solicitadas se você ativar os lembretes. Os lembretes são agendados pelo próprio celular e não são enviados de um servidor.<br>
+<b>Executar na inicialização:</b> usada apenas para reagendar os lembretes depois que o celular é reiniciado.<br>
+<b>Impressão digital / reconhecimento facial:</b> feito pelo Android; o aplicativo recebe apenas o resultado (sucesso ou falha).</p>
+<h2>Compras</h2>
+<p>Se você comprar uma assinatura no aplicativo, o Google Play processa o pagamento de acordo com a <a href="https://policies.google.com/privacy?hl=pt">Política de Privacidade do Google</a>. Recebemos apenas a confirmação de que a assinatura está ativa e nunca vemos seus dados de pagamento.</p>
+<h2>Excluir seus dados</h2>
+<p>Você pode excluir todos os dados no aplicativo (Mais → Dados e armazenamento → Excluir dados) ou desinstalando o aplicativo. As cópias no Google Drive são excluídas no seu Google Drive (pasta "Hedgy"). Como não armazenamos seus dados, não há nada a excluir do nosso lado.</p>
+<h2>Seus direitos</h2>
+<p>De acordo com o Regulamento Geral sobre a Proteção de Dados da UE (RGPD), você tem o direito de acessar, corrigir e excluir seus dados pessoais. Como todos os seus dados ficam sob seu controle, no seu dispositivo e na sua própria conta do Google, você pode exercer esses direitos diretamente no aplicativo e na sua conta do Google. Se tiver alguma dúvida, entre em contato conosco abaixo. Você também pode apresentar uma reclamação à sua autoridade de proteção de dados (na Letônia: <a href="https://www.dvi.gov.lv">Datu valsts inspekcija</a>).</p>
+<h2>Crianças</h2>
+<p>O Hedgy não se destina a crianças menores de 13 anos, e não coletamos intencionalmente dados de crianças.</p>
+<h2>Alterações</h2>
+<p>Se esta política mudar, a versão atualizada será publicada nesta página com uma nova data de vigência.</p>
+<h2>Contato</h2>
+<p>Dúvidas sobre esta política: <a href="mailto:lazda.andris1991@gmail.com">lazda.andris1991@gmail.com</a></p>
+</section>
+
+<section id="ru" lang="ru" class="pp" data-title="Hedgy – Политика конфиденциальности">
+<h1>Hedgy – Политика конфиденциальности</h1>
+<p><i>Дата вступления в силу: 24 октября 2026 г.</i></p>
+<p class="note">Это перевод. В случае расхождений преимущественную силу имеет <a href="?lang=en">английская версия</a>.</p>
+<p>Настоящая политика относится к Android-приложению Hedgy (пакет <code>com.andrislazda.hedgy</code>), которое разрабатывает Андрис Лазда, Латвия («мы», «разработчик»).</p>
+<div class="box"><b>Коротко:</b> в Hedgy нет аккаунтов, собственных серверов, аналитики, рекламы и отслеживания. Ваши финансовые данные остаются на вашем устройстве. Если вы включите резервное копирование в Google Диск, копии попадают прямо в <b>ваш собственный</b> Google Диск; разработчик никогда их не получает и не имеет к ним доступа.</div>
+<h2>Какие данные мы собираем</h2>
+<p>Никаких. Мы не получаем ваши операции, банковские выписки, идентификаторы устройства, местоположение, контакты или статистику использования.</p>
+<h2>Данные на вашем устройстве</h2>
+<p>Операции, категории, бюджеты, цели, правила и настройки, которые вы вводите или импортируете, хранятся только в хранилище приложения на вашем устройстве. Файлы банковских выписок читаются и обрабатываются на устройстве и никуда не загружаются.</p>
+<h2>Резервные копии и экспорт</h2>
+<p>Приложение автоматически хранит резервную копию своих данных во внутреннем хранилище приложения на вашем устройстве. Если вы выберете папку, в неё также сохраняется одна копия в день (хранятся последние 10). Экспорт CSV или файл резервной копии для отправки создаётся только по вашему запросу. Файл передаётся в выбранное вами место, например в «Файлы», Google Диск или почту, и на него распространяется политика конфиденциальности этого сервиса.</p>
+<p>Если на телефоне включено системное резервное копирование Android, Android включает эту автоматическую копию в вашу личную резервную копию Google, чтобы данные можно было восстановить на новом телефоне. Этим управляет Google, и у нас нет к ней доступа. PIN-код в неё не входит.</p>
+<h2>Резервное копирование в Google Диск (по желанию)</h2>
+<p>Hedgy может каждый день сохранять резервную копию в ваш Google Диск. По умолчанию эта функция выключена и запускается только после того, как вы нажмёте «Резервная копия в Google Диске» и войдёте в свой аккаунт Google.</p>
+<ul>
+<li><b>Что отправляется:</b> файл резервной копии (JSON) с описанными выше данными приложения (операции, категории, бюджеты, цели, правила и настройки). PIN-код в него не входит. Файл отправляется напрямую с вашего телефона в Google по зашифрованному соединению (HTTPS) и не проходит через наши серверы.</li>
+<li><b>Где хранится:</b> в папке «Hedgy» в вашем собственном Google Диске. Сохраняется одна копия в день, хранятся последние 10; более старые копии Hedgy удаляются автоматически.</li>
+<li><b>Доступ:</b> Hedgy запрашивает только разрешение <code>drive.file</code>, которое позволяет видеть и изменять лишь файлы, созданные самим приложением. Другие файлы в вашем Диске оно прочитать не может.</li>
+<li><b>Восстановление:</b> «Восстановить из Google Диска» загружает на телефон самую новую копию Hedgy.</li>
+<li><b>Отключение:</b> «Отключить Google Диск» прекращает создание новых копий. Уже сохранённые копии остаются в вашем Диске, пока вы не удалите их там. Вы также можете в любой момент отозвать доступ Hedgy на странице <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
+</ul>
+<p>Использование и передача приложением Hedgy информации, полученной через API Google, соответствуют документу <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, включая требования ограниченного использования (Limited Use). Эти данные используются только для резервного копирования и восстановления, никогда никому не передаются и никогда не используются для рекламы.</p>
+<h2>Разрешения</h2>
+<p><b>Интернет:</b> используется только для резервного копирования в Google Диск (если оно включено) и для покупок в Google Play. Hedgy не использует его, чтобы отправлять ваши данные куда-либо ещё.<br>
+<b>Уведомления:</b> запрашиваются, только если вы включите напоминания. Напоминания планирует сам телефон, они не отправляются с сервера.<br>
+<b>Запуск после включения:</b> используется только для того, чтобы заново запланировать напоминания после перезагрузки телефона.<br>
+<b>Отпечаток пальца / распознавание лица:</b> выполняет Android; приложение получает только результат (успешно или нет).</p>
+<h2>Покупки</h2>
+<p>Если вы покупаете подписку в приложении, платёж обрабатывает Google Play в соответствии с <a href="https://policies.google.com/privacy?hl=ru">политикой конфиденциальности Google</a>. Мы получаем только подтверждение того, что подписка активна, и никогда не видим ваши платёжные данные.</p>
+<h2>Удаление данных</h2>
+<p>Вы можете удалить все данные в приложении (Ещё → Данные и хранилище → Удалить данные) или удалив приложение. Копии в Google Диске удаляются в вашем Google Диске (папка «Hedgy»). Поскольку мы не храним ваши данные, с нашей стороны удалять нечего.</p>
+<h2>Ваши права</h2>
+<p>Согласно Общему регламенту ЕС по защите данных (GDPR) вы имеете право на доступ к своим персональным данным, их исправление и удаление. Поскольку все ваши данные остаются под вашим контролем, на вашем устройстве и в вашем собственном аккаунте Google, вы можете осуществлять эти права непосредственно в приложении и в своём аккаунте Google. Если у вас есть вопросы, свяжитесь с нами (см. ниже). Вы также можете подать жалобу в надзорный орган по защите данных (в Латвии: <a href="https://www.dvi.gov.lv">Datu valsts inspekcija</a>).</p>
+<h2>Дети</h2>
+<p>Hedgy не предназначено для детей младше 13 лет, и мы сознательно не собираем данные детей.</p>
+<h2>Изменения</h2>
+<p>Если эта политика изменится, обновлённая версия будет опубликована на этой странице с новой датой вступления в силу.</p>
+<h2>Контакты</h2>
+<p>Вопросы об этой политике: <a href="mailto:lazda.andris1991@gmail.com">lazda.andris1991@gmail.com</a></p>
+</section>
+
+<section id="sv" lang="sv" class="pp" data-title="Hedgy – Integritetspolicy">
+<h1>Hedgy – Integritetspolicy</h1>
+<p><i>Gäller från: 24 oktober 2026</i></p>
+<p class="note">Detta är en översättning. Vid avvikelser gäller den <a href="?lang=en">engelska versionen</a>.</p>
+<p>Denna policy gäller Android-appen Hedgy (paket <code>com.andrislazda.hedgy</code>), som utvecklas av Andris Lazda, Lettland (”vi”, ”utvecklaren”).</p>
+<div class="box"><b>I korthet:</b> Hedgy har inga konton, inga egna servrar, ingen analys, ingen reklam och ingen spårning. Dina ekonomiska data stannar på din enhet. Om du slår på säkerhetskopiering till Google Drive hamnar kopiorna direkt i <b>din egen</b> Google Drive; utvecklaren får aldrig ta del av dem och har ingen åtkomst till dem.</div>
+<h2>Data vi samlar in</h2>
+<p>Inga. Vi tar inte emot dina transaktioner, kontoutdrag, enhets-ID:n, din plats, dina kontakter eller användningsstatistik.</p>
+<h2>Data som lagras på din enhet</h2>
+<p>Transaktioner, kategorier, budgetar, mål, regler och inställningar som du anger eller importerar lagras endast i appens lagring på din enhet. Filer med kontoutdrag läses och bearbetas på enheten och laddas aldrig upp någonstans.</p>
+<h2>Säkerhetskopior och export</h2>
+<p>Appen sparar automatiskt en säkerhetskopia av sina data i appens interna lagring på din enhet. Om du väljer en mapp sparas även en kopia per dag där (de senaste 10 behålls). En CSV-export eller en säkerhetskopia att dela skapas bara när du ber om det. Filen lämnas till den plats du väljer, till exempel Filer, Google Drive eller e-post, och den tjänstens egen integritetspolicy gäller.</p>
+<p>Om Androids systemsäkerhetskopiering är påslagen i din telefon tar Android med denna automatiska kopia i din personliga Google-säkerhetskopia så att dina data kan återställas på en ny telefon. Detta hanteras av Google och vi har ingen åtkomst till den. Din PIN-kod ingår inte.</p>
+<h2>Säkerhetskopiering till Google Drive (valfritt)</h2>
+<p>Hedgy kan spara en säkerhetskopia i din Google Drive varje dag. Funktionen är avstängd som standard och startar först när du trycker på ”Säkerhetskopiera till Google Drive” och loggar in med ditt Google-konto.</p>
+<ul>
+<li><b>Vad som skickas:</b> en säkerhetskopia (JSON) med de appdata som beskrivs ovan (transaktioner, kategorier, budgetar, mål, regler och inställningar). Din PIN-kod ingår inte. Filen skickas direkt från din telefon till Google via en krypterad anslutning (HTTPS) och passerar inte genom någon av våra servrar.</li>
+<li><b>Var den lagras:</b> i en mapp som heter ”Hedgy” i din egen Google Drive. En kopia per dag sparas och de senaste 10 behålls; äldre Hedgy-kopior tas bort automatiskt.</li>
+<li><b>Åtkomst:</b> Hedgy begär endast behörigheten <code>drive.file</code>, som bara låter appen se och hantera filer som den själv har skapat. Den kan inte läsa några andra filer i din Drive.</li>
+<li><b>Återställning:</b> ”Återställ från Google Drive” hämtar den senaste Hedgy-kopian till din telefon.</li>
+<li><b>Avsluta:</b> ”Koppla från Google Drive” stoppar nya kopior. Kopior som redan har sparats finns kvar i din Drive tills du tar bort dem där. Du kan också när som helst ta bort Hedgys åtkomst på <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
+</ul>
+<p>Hedgys användning och överföring av information som tas emot från Googles API:er följer <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, inklusive kraven på begränsad användning (Limited Use). Dessa data används endast för säkerhetskopiering och återställning, delas aldrig med någon och används aldrig för reklam.</p>
+<h2>Behörigheter</h2>
+<p><b>Internet:</b> används endast för den valfria säkerhetskopieringen till Google Drive och för köp via Google Play. Hedgy använder den inte för att skicka dina data någon annanstans.<br>
+<b>Aviseringar:</b> begärs bara om du slår på påminnelser. Påminnelser schemaläggs av telefonen själv och skickas inte från en server.<br>
+<b>Körs vid start:</b> används endast för att schemalägga påminnelser igen efter att telefonen har startats om.<br>
+<b>Fingeravtryck / ansiktsigenkänning:</b> hanteras av Android; appen får bara resultatet (lyckades eller misslyckades).</p>
+<h2>Köp</h2>
+<p>Om du köper en prenumeration i appen hanterar Google Play betalningen enligt <a href="https://policies.google.com/privacy?hl=sv">Googles integritetspolicy</a>. Vi får bara en bekräftelse på att prenumerationen är aktiv och ser aldrig dina betalningsuppgifter.</p>
+<h2>Ta bort dina data</h2>
+<p>Du kan ta bort alla data i appen (Mer → Data och lagring → Ta bort data) eller genom att avinstallera appen. Kopior i Google Drive tar du bort i din Google Drive (mappen ”Hedgy”). Eftersom vi inte lagrar dina data finns det inget för oss att ta bort.</p>
+<h2>Dina rättigheter</h2>
+<p>Enligt EU:s dataskyddsförordning (GDPR) har du rätt att få tillgång till, rätta och radera dina personuppgifter. Eftersom alla dina data är under din kontroll, på din enhet och i ditt eget Google-konto, kan du utöva dessa rättigheter direkt i appen och i ditt Google-konto. Om du har frågor kan du kontakta oss nedan. Du kan också lämna in ett klagomål till din dataskyddsmyndighet (i Lettland: <a href="https://www.dvi.gov.lv">Datu valsts inspekcija</a>).</p>
+<h2>Barn</h2>
+<p>Hedgy riktar sig inte till barn under 13 år och vi samlar inte medvetet in uppgifter om barn.</p>
+<h2>Ändringar</h2>
+<p>Om denna policy ändras publiceras den uppdaterade versionen på denna sida med ett nytt datum för ikraftträdande.</p>
+<h2>Kontakt</h2>
+<p>Frågor om denna policy: <a href="mailto:lazda.andris1991@gmail.com">lazda.andris1991@gmail.com</a></p>
+</section>
+
+<section id="uk" lang="uk" class="pp" data-title="Hedgy – Політика конфіденційності">
+<h1>Hedgy – Політика конфіденційності</h1>
+<p><i>Дата набрання чинності: 24 жовтня 2026 р.</i></p>
+<p class="note">Це переклад. У разі розбіжностей переважну силу має <a href="?lang=en">англійська версія</a>.</p>
+<p>Ця політика стосується Android-застосунку Hedgy (пакет <code>com.andrislazda.hedgy</code>), який розробляє Андріс Лазда, Латвія («ми», «розробник»).</p>
+<div class="box"><b>Коротко:</b> у Hedgy немає облікових записів, власних серверів, аналітики, реклами та відстеження. Ваші фінансові дані залишаються на вашому пристрої. Якщо ви ввімкнете резервне копіювання в Google Диск, копії потрапляють прямо до <b>вашого власного</b> Google Диска; розробник ніколи їх не отримує і не має до них доступу.</div>
+<h2>Які дані ми збираємо</h2>
+<p>Жодних. Ми не отримуємо ваші операції, банківські виписки, ідентифікатори пристрою, місцезнаходження, контакти чи статистику використання.</p>
+<h2>Дані на вашому пристрої</h2>
+<p>Операції, категорії, бюджети, цілі, правила та налаштування, які ви вводите або імпортуєте, зберігаються лише в сховищі застосунку на вашому пристрої. Файли банківських виписок читаються й обробляються на пристрої та нікуди не завантажуються.</p>
+<h2>Резервні копії та експорт</h2>
+<p>Застосунок автоматично зберігає резервну копію своїх даних у внутрішньому сховищі застосунку на вашому пристрої. Якщо ви виберете папку, у неї також зберігається одна копія на день (зберігаються останні 10). Експорт CSV або файл резервної копії для надсилання створюється лише на ваш запит. Файл передається туди, куди ви оберете, наприклад у «Файли», Google Диск чи пошту, і на нього поширюється політика конфіденційності цього сервісу.</p>
+<p>Якщо на телефоні ввімкнено системне резервне копіювання Android, Android додає цю автоматичну копію до вашої особистої резервної копії Google, щоб дані можна було відновити на новому телефоні. Цим керує Google, і ми не маємо до неї доступу. PIN-код до неї не входить.</p>
+<h2>Резервне копіювання в Google Диск (за бажанням)</h2>
+<p>Hedgy може щодня зберігати резервну копію у ваш Google Диск. За замовчуванням цю функцію вимкнено; вона запускається лише після того, як ви натиснете «Резервна копія в Google Диску» і ввійдете у свій обліковий запис Google.</p>
+<ul>
+<li><b>Що надсилається:</b> файл резервної копії (JSON) з описаними вище даними застосунку (операції, категорії, бюджети, цілі, правила та налаштування). PIN-код до нього не входить. Файл надсилається безпосередньо з вашого телефона до Google зашифрованим з’єднанням (HTTPS) і не проходить через наші сервери.</li>
+<li><b>Де зберігається:</b> у папці «Hedgy» у вашому власному Google Диску. Зберігається одна копія на день, залишаються останні 10; старіші копії Hedgy видаляються автоматично.</li>
+<li><b>Доступ:</b> Hedgy запитує лише дозвіл <code>drive.file</code>, який дає змогу бачити й керувати тільки файлами, створеними самим застосунком. Інші файли у вашому Диску він прочитати не може.</li>
+<li><b>Відновлення:</b> «Відновити з Google Диска» завантажує на телефон найновішу копію Hedgy.</li>
+<li><b>Вимкнення:</b> «Відключити Google Диск» припиняє створення нових копій. Уже збережені копії залишаються у вашому Диску, доки ви їх там не видалите. Ви також можете будь-коли скасувати доступ Hedgy на сторінці <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
+</ul>
+<p>Використання та передавання застосунком Hedgy інформації, отриманої через API Google, відповідають документу <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, зокрема вимогам обмеженого використання (Limited Use). Ці дані використовуються лише для резервного копіювання та відновлення, ніколи нікому не передаються і ніколи не використовуються для реклами.</p>
+<h2>Дозволи</h2>
+<p><b>Інтернет:</b> використовується лише для резервного копіювання в Google Диск (якщо його ввімкнено) і для покупок у Google Play. Hedgy не використовує його, щоб надсилати ваші дані будь-куди ще.<br>
+<b>Сповіщення:</b> запитуються, лише якщо ви ввімкнете нагадування. Нагадування планує сам телефон, вони не надсилаються із сервера.<br>
+<b>Запуск після ввімкнення:</b> використовується лише для того, щоб знову запланувати нагадування після перезавантаження телефона.<br>
+<b>Відбиток пальця / розпізнавання обличчя:</b> виконує Android; застосунок отримує лише результат (успішно чи ні).</p>
+<h2>Покупки</h2>
+<p>Якщо ви купуєте підписку в застосунку, платіж обробляє Google Play відповідно до <a href="https://policies.google.com/privacy?hl=uk">політики конфіденційності Google</a>. Ми отримуємо лише підтвердження, що підписка активна, і ніколи не бачимо ваших платіжних даних.</p>
+<h2>Видалення даних</h2>
+<p>Ви можете видалити всі дані в застосунку (Більше → Дані та сховище → Видалити дані) або видаливши застосунок. Копії в Google Диску видаляються у вашому Google Диску (папка «Hedgy»). Оскільки ми не зберігаємо ваших даних, з нашого боку видаляти нічого.</p>
+<h2>Ваші права</h2>
+<p>Відповідно до Загального регламенту ЄС про захист даних (GDPR) ви маєте право на доступ до своїх персональних даних, їх виправлення та видалення. Оскільки всі ваші дані залишаються під вашим контролем, на вашому пристрої та у вашому власному обліковому записі Google, ви можете здійснювати ці права безпосередньо в застосунку та у своєму обліковому записі Google. Якщо у вас є запитання, зв’яжіться з нами (див. нижче). Ви також можете подати скаргу до органу із захисту даних (у Латвії: <a href="https://www.dvi.gov.lv">Datu valsts inspekcija</a>).</p>
+<h2>Діти</h2>
+<p>Hedgy не призначений для дітей віком до 13 років, і ми свідомо не збираємо дані дітей.</p>
+<h2>Зміни</h2>
+<p>Якщо ця політика зміниться, оновлену версію буде опубліковано на цій сторінці з новою датою набрання чинності.</p>
+<h2>Контакти</h2>
+<p>Запитання щодо цієї політики: <a href="mailto:lazda.andris1991@gmail.com">lazda.andris1991@gmail.com</a></p>
+</section>
+
+<script>
+(function(){
+  var langs=["en","lv","cs","de","es","et","fi","fr","it","lt","nl","pl","pt","ru","sv","uk"],sel=document.getElementById('lang');
+  function pick(){
+    var q=new URLSearchParams(location.search).get('lang')||location.hash.slice(1);
+    if(langs.indexOf(q)>=0)return q;
+    var nav=navigator.languages||[navigator.language||'en'];
+    for(var i=0;i<nav.length;i++){var p=String(nav[i]).toLowerCase().split('-')[0];if(langs.indexOf(p)>=0)return p}
+    return 'en';
+  }
+  function show(k,push){
+    langs.forEach(function(x){document.getElementById(x).classList.toggle('on',x===k)});
+    sel.value=k;document.documentElement.lang=k;
+    document.title=document.getElementById(k).getAttribute('data-title');
+    if(push)history.replaceState(null,'','?lang='+k);
+  }
+  sel.onchange=function(){show(sel.value,true);scrollTo(0,0)};
+  document.addEventListener('click',function(e){var a=e.target.closest('a[href^="?lang="]');if(a){e.preventDefault();show(a.getAttribute('href').slice(6),true);scrollTo(0,0)}});
+  show(pick(),false);
+})();
+</script>
 </body>
 </html>
