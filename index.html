@@ -730,10 +730,7 @@ select{font:inherit;color:var(--fg);background:var(--card);border:1px solid var(
   var langs=["en","lv","cs","de","es","et","fi","fr","it","lt","nl","pl","pt","ru","sv","uk"],sel=document.getElementById('lang');
   function pick(){
     var q=new URLSearchParams(location.search).get('lang')||location.hash.slice(1);
-    if(langs.indexOf(q)>=0)return q;
-    var nav=navigator.languages||[navigator.language||'en'];
-    for(var i=0;i<nav.length;i++){var p=String(nav[i]).toLowerCase().split('-')[0];if(langs.indexOf(p)>=0)return p}
-    return 'en';
+    return langs.indexOf(q)>=0?q:'en'; // bez ?lang= vienmēr angļu valoda
   }
   function show(k,push){
     langs.forEach(function(x){document.getElementById(x).classList.toggle('on',x===k)});
